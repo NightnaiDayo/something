@@ -1,0 +1,28 @@
+Function name    Segment    Start    Length    Locals    Arguments    R    F    L    M    O    S    B    T    =    X
+
+Sekai::APIErrorHandleActionAssign::APIErrorHandleActionAssign(System::String,Sekai::APICoreParam::AfterErrorDetectionType,Sekai::APICoreParam::AfterInterruptionType)    il2cpp    0000000003E0DCF8    00000054    00000030        R    .    .    .    .    .    B    T    .    .
+Sekai::APIErrorHandleActionAssign::APIErrorHandleActionAssign(System::String,Sekai::APICoreParam::AfterErrorDetectionType,Sekai::APICoreParam::AfterInterruptionType,Sekai::DialogSize)    il2cpp    0000000003E0DD4C    0000005C    00000040        R    .    .    .    .    .    B    T    .    .
+Sekai::APIErrorHandleActionAssign::get_DialogSize(void)    il2cpp    0000000003E0DDD8    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::APIErrorHandleActionAssign::get_ErrorDetectionType(void)    il2cpp    0000000003E0DDB8    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::APIErrorHandleActionAssign::get_InterruptionType(void)    il2cpp    0000000003E0DDC8    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::APIErrorHandleActionAssign::get_Message(void)    il2cpp    0000000003E0DDA8    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::APIErrorHandleActionAssign::set_DialogSize(Sekai::DialogSize)    il2cpp    0000000003E0DDE0    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::APIErrorHandleActionAssign::set_ErrorDetectionType(Sekai::APICoreParam::AfterErrorDetectionType)    il2cpp    0000000003E0DDC0    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::APIErrorHandleActionAssign::set_InterruptionType(Sekai::APICoreParam::AfterInterruptionType)    il2cpp    0000000003E0DDD0    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::APIErrorHandleActionAssign::set_Message(System::String)    il2cpp    0000000003E0DDB0    00000008            R    .    .    .    .    .    .    T    .    .
+
+Function name    Segment    Start    Length    Locals    Arguments    R    F    L    M    O    S    B    T    =    X
+
+Sekai::ClientErrorResponse::ClientErrorResponse(void)    il2cpp    0000000003E05F58    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::ClientErrorResponse::get_ErrorCode(void)    il2cpp    0000000003E05F38    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::ClientErrorResponse::get_ErrorMessage(void)    il2cpp    0000000003E05F48    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::ClientErrorResponse::get_HttpStatus(void)    il2cpp    0000000003E05F28    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::ClientErrorResponse::set_ErrorCode(System::String)    il2cpp    0000000003E05F40    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::ClientErrorResponse::set_ErrorMessage(System::String)    il2cpp    0000000003E05F50    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::ClientErrorResponse::set_HttpStatus(uint)    il2cpp    0000000003E05F30    00000008            R    .    .    .    .    .    .    T    .    .
+
+Function name    Segment    Start    Length    Locals    Arguments    R    F    L    M    O    S    B    T    =    X
+
+Sekai::ClientErrorInfomation::ClientErrorInfomation(void)    il2cpp    0000000003E05EE8    00000030    00000020        R    .    .    .    .    .    B    T    .    .
+Sekai::ClientErrorInfomation::get_Response(void)    il2cpp    0000000003E05F18    00000008            R    .    .    .    .    .    .    T    .    .
+Sekai::ClientErrorInfomation::set_Response(Sekai::ClientErrorResponse)    il2cpp    0000000003E05F20    00000008            R    .    .    .    .    .    .    T    .    .
