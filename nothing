@@ -1,0 +1,209 @@
+// UserEpisodeStatus Deserialize(Byte[], Int32, IFormatterResolver, Int32 ByRef)
+UserEpisodeStatus *__fastcall MessagePack::Formatters::Sekai::UserEpisodeStatusFormatter::Deserialize(
+        UserEpisodeStatusFormatter *this,
+        Byte__Array *bytes,
+        int32_t offset,
+        IFormatterResolver *formatterResolver,
+        int32_t *readSize,
+        MethodInfo *method)
+{
+  struct MessagePackBinary__Class *v11; // x0
+  UserEpisodeStatus *v12; // x20
+  int32_t MapHeader; // w0
+  int32_t v14; // w24
+  int32_t v15; // w26
+  __int64 v16; // x28
+  __int64 v17; // x27
+  int v18; // w20
+  __int64 v19; // x1
+  ArraySegment_1_Byte_ StringSegment; // kr00_16
+  AutomataDictionary *keyMapping; // x0
+  __int64 v22; // x24
+  AutomataDictionary__Class *v23; // x8
+  __int64 v24; // x9
+  struct IMessagePackFormatter_1_System_String__1__Class **v25; // x10
+  AutomataDictionary *v26; // x28
+  __int64 v27; // x8
+  AutomataDictionary__Class *klass; // x8
+  __int64 v29; // x9
+  struct IMessagePackFormatter_1_System_String__1__Class **p_offset; // x10
+  AutomataDictionary *v31; // x27
+  __int64 v32; // x8
+  int32_t v34; // [xsp+0h] [xbp-60h]
+  int32_t Int32; // [xsp+4h] [xbp-5Ch]
+  bool Boolean; // [xsp+8h] [xbp-58h]
+  int32_t value; // [xsp+Ch] [xbp-54h] BYREF
+
+  if ( (byte_79683FB & 1) != 0 )
+  {
+    value = 0;
+    v11 = TypeInfo::MessagePack::MessagePackBinary;
+    if ( TypeInfo::MessagePack::MessagePackBinary->_1.cctor_finished_or_no_cctor )
+      goto LABEL_3;
+LABEL_6:
+    sub_26BCB08(v11);
+    if ( MessagePack::MessagePackBinary::IsNil(bytes, offset, 0) )
+      goto LABEL_4;
+    goto LABEL_7;
+  }
+  sub_26BC96C(&MethodInfo::MessagePack::FormatterResolverExtensions::GetFormatterWithVerify<System::String>);
+  sub_26BC96C(&TypeInfo::MessagePack::Formatters::IMessagePackFormatter<System::String>);
+  sub_26BC96C(&TypeInfo::MessagePack::MessagePackBinary);
+  sub_26BC96C(&TypeInfo::Sekai::UserEpisodeStatus);
+  byte_79683FB = 1;
+  value = 0;
+  v11 = TypeInfo::MessagePack::MessagePackBinary;
+  if ( !TypeInfo::MessagePack::MessagePackBinary->_1.cctor_finished_or_no_cctor )
+    goto LABEL_6;
+LABEL_3:
+  if ( MessagePack::MessagePackBinary::IsNil(bytes, offset, 0) )
+  {
+LABEL_4:
+    v12 = 0;
+    *readSize = 1;
+    return v12;
+  }
+LABEL_7:
+  if ( !TypeInfo::MessagePack::MessagePackBinary->_1.cctor_finished_or_no_cctor )
+    sub_26BCB08(TypeInfo::MessagePack::MessagePackBinary);
+  MapHeader = MessagePack::MessagePackBinary::ReadMapHeader(bytes, offset, readSize, 0);
+  v34 = offset;
+  v14 = *readSize + offset;
+  if ( MapHeader >= 1 )
+  {
+    v15 = MapHeader;
+    v16 = 0;
+    Int32 = 0;
+    Boolean = 0;
+    v17 = 0;
+    v18 = 0;
+    while ( 1 )
+    {
+      if ( !TypeInfo::MessagePack::MessagePackBinary->_1.cctor_finished_or_no_cctor )
+        sub_26BCB08(TypeInfo::MessagePack::MessagePackBinary);
+      StringSegment = MessagePack::MessagePackBinary::ReadStringSegment(bytes, v14, readSize, 0);
+      v19 = *(__int64 *)&StringSegment._offset;
+      keyMapping = this->____keyMapping;
+      if ( !keyMapping )
+        goto LABEL_50;
+      v22 = (unsigned int)(*readSize + v14);
+      if ( !MessagePack::Internal::AutomataDictionary::TryGetValueSafe(keyMapping, StringSegment, &value, 0) )
+        goto LABEL_11;
+      if ( value > 1 )
+      {
+        if ( value != 2 )
+        {
+          if ( value == 3 )
+          {
+            if ( !TypeInfo::MessagePack::MessagePackBinary->_1.cctor_finished_or_no_cctor )
+              sub_26BCB08(TypeInfo::MessagePack::MessagePackBinary);
+            Boolean = MessagePack::MessagePackBinary::ReadBoolean(bytes, v22, readSize, 0);
+            goto LABEL_14;
+          }
+LABEL_11:
+          if ( !TypeInfo::MessagePack::MessagePackBinary->_1.cctor_finished_or_no_cctor )
+            sub_26BCB08(TypeInfo::MessagePack::MessagePackBinary);
+          *readSize = MessagePack::MessagePackBinary::ReadNextBlock(bytes, v22, 0);
+          goto LABEL_14;
+        }
+        keyMapping = (AutomataDictionary *)MessagePack::FormatterResolverExtensions::GetFormatterWithVerify<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>(
+                                             formatterResolver,
+                                             MethodInfo::MessagePack::FormatterResolverExtensions::GetFormatterWithVerify<System::String>);
+        if ( !keyMapping )
+          goto LABEL_50;
+        klass = keyMapping->klass;
+        v29 = *(unsigned __int16 *)&keyMapping->klass->_1.rank;
+        if ( *(_WORD *)&keyMapping->klass->_1.rank )
+        {
+          p_offset = (struct IMessagePackFormatter_1_System_String__1__Class **)&klass->interfaceOffsets->offset;
+          while ( *(p_offset - 1) != TypeInfo::MessagePack::Formatters::IMessagePackFormatter<System::String> )
+          {
+            p_offset += 2;
+            if ( !--v29 )
+              goto LABEL_41;
+          }
+          v32 = (__int64)(&klass->vtable.Finalize + *(_DWORD *)p_offset);
+        }
+        else
+        {
+LABEL_41:
+          v31 = keyMapping;
+          v32 = sub_26EDC78(keyMapping, TypeInfo::MessagePack::Formatters::IMessagePackFormatter<System::String>, 1);
+          keyMapping = v31;
+        }
+        v17 = (*(__int64 (__fastcall **)(AutomataDictionary *, Byte__Array *, __int64, IFormatterResolver *, int32_t *, _QWORD))v32)(
+                keyMapping,
+                bytes,
+                v22,
+                formatterResolver,
+                readSize,
+                *(_QWORD *)(v32 + 8));
+      }
+      else if ( value )
+      {
+        if ( value != 1 )
+          goto LABEL_11;
+        if ( !TypeInfo::MessagePack::MessagePackBinary->_1.cctor_finished_or_no_cctor )
+          sub_26BCB08(TypeInfo::MessagePack::MessagePackBinary);
+        Int32 = MessagePack::MessagePackBinary::ReadInt32(bytes, v22, readSize, 0);
+      }
+      else
+      {
+        keyMapping = (AutomataDictionary *)MessagePack::FormatterResolverExtensions::GetFormatterWithVerify<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>(
+                                             formatterResolver,
+                                             MethodInfo::MessagePack::FormatterResolverExtensions::GetFormatterWithVerify<System::String>);
+        if ( !keyMapping )
+          goto LABEL_50;
+        v23 = keyMapping->klass;
+        v24 = *(unsigned __int16 *)&keyMapping->klass->_1.rank;
+        if ( *(_WORD *)&keyMapping->klass->_1.rank )
+        {
+          v25 = (struct IMessagePackFormatter_1_System_String__1__Class **)&v23->interfaceOffsets->offset;
+          while ( *(v25 - 1) != TypeInfo::MessagePack::Formatters::IMessagePackFormatter<System::String> )
+          {
+            v25 += 2;
+            if ( !--v24 )
+              goto LABEL_35;
+          }
+          v27 = (__int64)(&v23->vtable.Finalize + *(_DWORD *)v25);
+        }
+        else
+        {
+LABEL_35:
+          v26 = keyMapping;
+          v27 = sub_26EDC78(keyMapping, TypeInfo::MessagePack::Formatters::IMessagePackFormatter<System::String>, 1);
+          keyMapping = v26;
+        }
+        v16 = (*(__int64 (__fastcall **)(AutomataDictionary *, Byte__Array *, __int64, IFormatterResolver *, int32_t *, _QWORD))v27)(
+                keyMapping,
+                bytes,
+                v22,
+                formatterResolver,
+                readSize,
+                *(_QWORD *)(v27 + 8));
+      }
+LABEL_14:
+      v14 = *readSize + v22;
+      if ( ++v18 == v15 )
+        goto LABEL_47;
+    }
+  }
+  Int32 = 0;
+  Boolean = 0;
+  v17 = 0;
+  v16 = 0;
+LABEL_47:
+  *readSize = v14 - v34;
+  v12 = (UserEpisodeStatus *)sub_26BCC28(TypeInfo::Sekai::UserEpisodeStatus);
+  Sekai::UserEpisodeStatus::UserEpisodeStatus(v12, 0);
+  if ( !v12 )
+LABEL_50:
+    sub_26BCC3C(keyMapping, v19);
+  v12->storyType = (String *)v16;
+  sub_26BC90C(&v12->storyType, v16);
+  v12->status = (String *)v17;
+  v12->episodeId = Int32;
+  sub_26BC90C(&v12->status, v17);
+  v12->isNotSkipped = Boolean;
+  return v12;
+}
