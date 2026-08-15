@@ -1,0 +1,1106 @@
+// Void OnApiFinished[__Il2CppFullySharedGenericType,__Il2CppFullySharedGenericType](APICore`2[Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType,Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType])
+void __fastcall Sekai::APIExecutor::OnApiFinished<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>(
+        APIExecutor *this,
+        APICore_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *apiCore,
+        MethodInfo *method)
+{
+  const Il2CppRGCTXData *rgctx_data; // x8
+  void *rgctxDataDummy; // x0
+  APIExecutor_c_DisplayClass8_0_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *v8; // x23
+  APICore_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ **p_apiCore; // x22
+  ScreenManager *Instance; // x0
+  Il2CppRGCTXData v11; // x0
+  APIExecutor_c_DisplayClass8_1_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *v12; // x21
+  Object **p_CS___8__locals1; // x22
+  APICore_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *v14; // x8
+  String *Empty; // x20
+  int32_t AfterErrorDetaction_k__BackingField; // w25
+  APIResult *result; // x8
+  int State_k__BackingField; // w8
+  String *v19; // x0
+  String *v20; // x0
+  String *v21; // x0
+  String *v22; // x0
+  String *v23; // x0
+  String *v24; // x0
+  APICoreParam *klass; // x0
+  APICoreParam *v26; // x0
+  APICoreParam_ApiErrorHandlingMessageChangeHandler *v27; // x0
+  Object__Class *v28; // x8
+  Il2CppClass *element_class; // x9
+  __int64 v30; // x0
+  __int64 v31; // x23
+  Object *v32; // x23
+  Object__Class *v33; // x0
+  Il2CppClass *v34; // x8
+  int name; // w8
+  ScreenManager *v36; // x20
+  Il2CppRGCTXData v37; // x0
+  Il2CppRGCTXData v38; // x0
+  Action *v39; // x23
+  Il2CppRGCTXData v40; // x0
+  Il2CppRGCTXData v41; // x0
+  Object *v42; // x24
+  Il2CppRGCTXData v43; // x0
+  Il2CppRGCTXData v44; // x0
+  ScreenManager *v45; // x20
+  Il2CppRGCTXData v46; // x0
+  Il2CppRGCTXData v47; // x0
+  Action *v48; // x24
+  Il2CppRGCTXData v49; // x0
+  Il2CppRGCTXData v50; // x0
+  Object *v51; // x25
+  Il2CppRGCTXData v52; // x0
+  Il2CppRGCTXData v53; // x0
+  ScreenManager *v54; // x20
+  Il2CppRGCTXData v55; // x0
+  Il2CppRGCTXData v56; // x0
+  Action *v57; // x23
+  Il2CppRGCTXData v58; // x0
+  Il2CppRGCTXData v59; // x0
+  Object *v60; // x24
+  Il2CppRGCTXData v61; // x0
+  Il2CppRGCTXData v62; // x0
+  Object *v63; // x0
+  uint32_t cctor_finished_or_no_cctor; // w8
+  ScreenManager *v65; // x20
+  Il2CppRGCTXData v66; // x0
+  Il2CppRGCTXData v67; // x0
+  Action *v68; // x24
+  Il2CppRGCTXData v69; // x0
+  Il2CppRGCTXData v70; // x0
+  Object *v71; // x25
+  Il2CppRGCTXData v72; // x0
+  Il2CppRGCTXData v73; // x0
+  ScreenManager *v74; // x20
+  Il2CppRGCTXData v75; // x0
+  Il2CppRGCTXData v76; // x0
+  Action *v77; // x23
+  Il2CppRGCTXData v78; // x0
+  Il2CppRGCTXData v79; // x0
+  Object *v80; // x24
+  Il2CppRGCTXData v81; // x0
+  Il2CppRGCTXData v82; // x0
+  ScreenManager *v83; // x20
+  Il2CppRGCTXData v84; // x0
+  Il2CppRGCTXData v85; // x0
+  Action *v86; // x24
+  Il2CppRGCTXData v87; // x0
+  Il2CppRGCTXData v88; // x0
+  Object *v89; // x25
+  Il2CppRGCTXData v90; // x0
+  Il2CppRGCTXData v91; // x0
+  ScreenManager *v92; // x20
+  Object *v93; // x22
+  Action *v94; // x21
+  Object__Class *v95; // x8
+  Il2CppClass *castClass; // x8
+  String *v97; // x0
+  Object *v98; // x8
+  ScreenManager *v99; // x20
+  Il2CppRGCTXData v100; // x0
+  Il2CppRGCTXData v101; // x0
+  Action *v102; // x23
+  Il2CppRGCTXData v103; // x0
+  Il2CppRGCTXData v104; // x0
+  Object *v105; // x24
+  Il2CppRGCTXData v106; // x0
+  Il2CppRGCTXData v107; // x0
+  Il2CppRGCTXData v108; // x0
+  Il2CppRGCTXData v109; // x0
+  Il2CppRGCTXData v110; // x0
+  Il2CppRGCTXData v111; // x0
+  Object *v112; // x24
+  Il2CppRGCTXData v113; // x0
+  Il2CppRGCTXData v114; // x0
+  String *v115; // x0
+  Object *v116; // x0
+  ScreenManager *v117; // x20
+  Il2CppRGCTXData v118; // x0
+  Il2CppRGCTXData v119; // x0
+  Action *v120; // x24
+  Il2CppRGCTXData v121; // x0
+  Il2CppRGCTXData v122; // x0
+  Object *v123; // x25
+  Il2CppRGCTXData v124; // x0
+  Il2CppRGCTXData v125; // x0
+  Action *v126; // x22
+  Common1ButtonDialog *v127; // x0
+  ScreenManager *v128; // x20
+  Il2CppRGCTXData v129; // x0
+  Il2CppRGCTXData v130; // x0
+  Action *v131; // x24
+  Il2CppRGCTXData v132; // x0
+  Il2CppRGCTXData v133; // x0
+  Object *v134; // x25
+  Il2CppRGCTXData v135; // x0
+  Il2CppRGCTXData v136; // x0
+  Object__Class *v137; // x9
+  Il2CppClass *v138; // x9
+  Object__Class *v139; // x8
+  int interopData; // w8
+  ScreenManager *v141; // x21
+  Object *v142; // x23
+  Action *v143; // x22
+  ScreenManager *v144; // x21
+  String *v145; // x22
+  Il2CppRGCTXData v146; // x0
+  Il2CppRGCTXData v147; // x0
+  Action *v148; // x25
+  Il2CppRGCTXData v149; // x0
+  Il2CppRGCTXData v150; // x0
+  Object *v151; // x26
+  Il2CppRGCTXData v152; // x0
+  Il2CppRGCTXData v153; // x0
+  Action *v154; // x22
+  Action *v155; // x23
+  Common2ButtonDialog *v156; // x0
+  ScreenManager *v157; // x22
+  Action *v158; // x23
+
+  rgctx_data = method->rgctx_data;
+  if ( rgctx_data )
+    goto LABEL_3;
+  sub_26BC96C(&TypeInfo::System::Action);
+  sub_26BC96C(&MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+  sub_26BC96C(&MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+  sub_26BC96C(&MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::TitleMaintenanceDialog>);
+  sub_26BC96C(&MethodInfo::Sekai::ScreenManager::ShowSubWindowDialog<Sekai::SubWindowDialog>);
+  sub_26BC96C(&TypeInfo::Sekai::ScreenManager);
+  sub_26BC96C(&MethodInfo::CP::SingletonMonoBehaviour<Sekai::SceneManager>::get_Instance);
+  sub_26BC96C(&TypeInfo::System::String);
+  sub_26BC96C(&TypeInfo::Sekai::WordingManager);
+  sub_26BC96C(&StringLiteral_WORD_MAINTENANCE);
+  sub_26BC96C(&StringLiteral_MSG_CS_BAN);
+  sub_26BC96C(&StringLiteral_WORD_UPDATE);
+  sub_26BC96C(&StringLiteral_MSG_API_TIMEOUT_ERROR);
+  sub_26BC96C(&StringLiteral_MSG_APRIL_FOOL_2022_VOCAL_OUT_OF);
+  sub_26BC96C(&StringLiteral_MSG_API_NOTREACHABLE_ERROR);
+  sub_26BC96C(&StringLiteral_MSG_API_UPDATE_RULE_AGREEMENT_VE);
+  sub_26BC96C(&StringLiteral_MSG_SERVER_MAINTENANCE);
+  sub_26BC96C(&StringLiteral_MSG_MODULE_MAINTENANCE);
+  sub_26BC96C(&StringLiteral_WORD_NEWS);
+  sub_26BC96C(&StringLiteral_WORD_MODULE_MAINTENANCE);
+  sub_26BC96C(&StringLiteral_MSG_API_CONNECT_ERROR);
+  sub_26BC96C(&StringLiteral_MSG_API_UPDATE_APPLICATION);
+  sub_26BC96C(&StringLiteral_WORD_OK);
+  sub_26BC96C(&StringLiteral_MSG_API_SERVER_ERROR);
+  sub_26BC96C(&StringLiteral_MSG_API_SESSION_ERROR);
+  sub_26BC96C(&StringLiteral_MSG_API_UPDATE_DATA_VERSION);
+  sub_26BC96C(&StringLiteral_MSG_LOGIN_BAN);
+  sub_26BC96C(&StringLiteral_WORD_ERROR);
+  sub_26BC96C(&StringLiteral_isForceAllReload_false_name_user);
+  sub_26BC96C(&StringLiteral__);
+  sub_26BC96C(&StringLiteral_WORD_RETRY);
+  sub_26BC96C(&StringLiteral_MSG_API_CLIENT_ERROR);
+  rgctx_data = method->rgctx_data;
+  if ( rgctx_data )
+  {
+LABEL_3:
+    rgctxDataDummy = rgctx_data->rgctxDataDummy;
+    if ( (*(_WORD *)((_BYTE *)rgctx_data->rgctxDataDummy + 309) & 1) != 0 )
+      goto LABEL_5;
+    goto LABEL_4;
+  }
+  sub_26ED9CC(method);
+  rgctxDataDummy = method->rgctx_data->rgctxDataDummy;
+  if ( (*(_WORD *)((_BYTE *)rgctxDataDummy + 309) & 1) == 0 )
+LABEL_4:
+    rgctxDataDummy = (void *)sub_26ED958();
+LABEL_5:
+  v8 = (APIExecutor_c_DisplayClass8_0_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)sub_26BCC28(rgctxDataDummy);
+  Sekai::APIExecutor::__c__DisplayClass8_0<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::__c__DisplayClass8_0(
+    v8,
+    (MethodInfo *)method->rgctx_data[1].rgctxDataDummy);
+  if ( !v8 )
+    sub_26BCC3C();
+  v8->apiCore = apiCore;
+  p_apiCore = &v8->apiCore;
+  sub_26BC90C(&v8->apiCore, apiCore);
+  v8->__4__this = this;
+  sub_26BC90C(&v8->__4__this, this);
+  if ( !v8->apiCore )
+    sub_26BCC3C();
+  if ( v8->apiCore->executeBehaviourParam._ShowIndicator_k__BackingField )
+  {
+    if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+      sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+    if ( Sekai::ScreenManager::get_ExistsInstance(0) )
+    {
+      if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+        sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+      Instance = Sekai::ScreenManager::get_Instance(0);
+      if ( !Instance )
+        sub_26BCC3C();
+      Sekai::ScreenManager::ReleaseNetworkIndicatorScreen(Instance, (Object_1 *)this, 0);
+    }
+  }
+  Sekai::APIExecutor::ExecutingTapEnable(this, 1, 0);
+  if ( !*p_apiCore )
+    sub_26BCC3C();
+  if ( (*p_apiCore)->currentState != 18 )
+  {
+    v11.rgctxDataDummy = method->rgctx_data[3].rgctxDataDummy;
+    if ( (*(_WORD *)((_BYTE *)v11.rgctxDataDummy + 309) & 1) == 0 )
+      v11.rgctxDataDummy = (void *)sub_26ED958();
+    v12 = (APIExecutor_c_DisplayClass8_1_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)((__int64 (__fastcall *)(_QWORD))sub_26BCC28)((Il2CppRGCTXData)v11.rgctxDataDummy);
+    Sekai::APIExecutor::__c__DisplayClass8_1<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::__c__DisplayClass8_1(
+      v12,
+      (MethodInfo *)method->rgctx_data[4].rgctxDataDummy);
+    if ( !v12 )
+      sub_26BCC3C();
+    v12->CS___8__locals1 = v8;
+    p_CS___8__locals1 = (Object **)&v12->CS___8__locals1;
+    sub_26BC90C(&v12->CS___8__locals1, v8);
+    if ( !v12->CS___8__locals1 )
+      sub_26BCC3C();
+    v14 = v12->CS___8__locals1->apiCore;
+    if ( !v14 )
+      sub_26BCC3C();
+    Empty = TypeInfo::System::String->static_fields->Empty;
+    AfterErrorDetaction_k__BackingField = v14->executeBehaviourParam._AfterErrorDetaction_k__BackingField;
+    v12->interruptionType = v14->executeBehaviourParam._AfterInterruption_k__BackingField;
+    result = v14->result;
+    if ( !result )
+      sub_26BCC3C();
+    State_k__BackingField = result->_State_k__BackingField;
+    if ( State_k__BackingField <= 4 )
+    {
+      if ( State_k__BackingField == 1 )
+      {
+        if ( !TypeInfo::Sekai::WordingManager->_1.cctor_finished_or_no_cctor )
+          sub_26BCB08(TypeInfo::Sekai::WordingManager);
+        v23 = Sekai::WordingManager::Get((String *)"MSG_API_CONNECT_ERROR", 0);
+        v20 = System::String::Concat(Empty, v23, 0);
+        goto LABEL_51;
+      }
+      if ( State_k__BackingField == 4 )
+      {
+        if ( !TypeInfo::Sekai::WordingManager->_1.cctor_finished_or_no_cctor )
+          sub_26BCB08(TypeInfo::Sekai::WordingManager);
+        v21 = Sekai::WordingManager::Get((String *)"MSG_API_TIMEOUT_ERROR", 0);
+        v20 = System::String::Concat(Empty, v21, 0);
+        goto LABEL_51;
+      }
+    }
+    else if ( State_k__BackingField <= 11 )
+    {
+      if ( State_k__BackingField == 10 )
+      {
+        if ( !TypeInfo::Sekai::WordingManager->_1.cctor_finished_or_no_cctor )
+          sub_26BCB08(TypeInfo::Sekai::WordingManager);
+        goto LABEL_50;
+      }
+      if ( State_k__BackingField == 11 )
+      {
+        if ( !TypeInfo::Sekai::WordingManager->_1.cctor_finished_or_no_cctor )
+          sub_26BCB08(TypeInfo::Sekai::WordingManager);
+        v22 = Sekai::WordingManager::Get((String *)"MSG_API_SERVER_ERROR", 0);
+        v20 = System::String::Concat(Empty, v22, 0);
+        goto LABEL_51;
+      }
+    }
+    else
+    {
+      if ( (unsigned int)(State_k__BackingField - 12) < 2 )
+        goto LABEL_52;
+      if ( State_k__BackingField == 26 )
+      {
+        if ( !TypeInfo::Sekai::WordingManager->_1.cctor_finished_or_no_cctor )
+          sub_26BCB08(TypeInfo::Sekai::WordingManager);
+        v19 = Sekai::WordingManager::Get((String *)"MSG_API_NOTREACHABLE_ERROR", 0);
+        v20 = System::String::Concat(Empty, v19, 0);
+        goto LABEL_51;
+      }
+    }
+    if ( !TypeInfo::Sekai::WordingManager->_1.cctor_finished_or_no_cctor )
+      sub_26BCB08(TypeInfo::Sekai::WordingManager);
+LABEL_50:
+    v24 = Sekai::WordingManager::Get((String *)"MSG_API_CLIENT_ERROR", 0);
+    v20 = System::String::Concat(Empty, v24, 0);
+LABEL_51:
+    Empty = v20;
+LABEL_52:
+    if ( !*p_CS___8__locals1 )
+      sub_26BCC3C();
+    klass = (APICoreParam *)(*p_CS___8__locals1)[1].klass;
+    if ( !klass )
+      sub_26BCC3C();
+    if ( Sekai::APICoreParam::get_ErrorHandlingMessageChange(klass, 0) )
+    {
+      if ( !*p_CS___8__locals1 )
+        sub_26BCC3C();
+      v26 = (APICoreParam *)(*p_CS___8__locals1)[1].klass;
+      if ( !v26 )
+        sub_26BCC3C();
+      v27 = Sekai::APICoreParam::get_ErrorHandlingMessageChange(v26, 0);
+      if ( !*p_CS___8__locals1 )
+        sub_26BCC3C();
+      v28 = (*p_CS___8__locals1)[1].klass;
+      if ( !v28 )
+        sub_26BCC3C();
+      element_class = v28->_0.element_class;
+      if ( !element_class )
+        sub_26BCC3C();
+      if ( !v27 )
+        sub_26BCC3C();
+      v30 = ((__int64 (__fastcall *)(void *, void *, const char *, void *))v27->invoke_impl)(
+              v27->method_code,
+              v28->_0.byval_arg.data.dummy,
+              element_class->namespaze,
+              v27->method);
+      v31 = v30;
+      if ( v30 )
+      {
+        if ( !System::String::IsNullOrEmpty(*(String **)(v30 + 16), 0) )
+          Empty = *(String **)(v31 + 16);
+        AfterErrorDetaction_k__BackingField = *(_DWORD *)(v31 + 24);
+        v12->interruptionType = *(_DWORD *)(v31 + 28);
+      }
+    }
+    if ( AfterErrorDetaction_k__BackingField == 2 )
+      return;
+    v32 = *p_CS___8__locals1;
+    if ( !*p_CS___8__locals1 )
+      sub_26BCC3C();
+    v33 = v32[1].klass;
+    if ( !v33 )
+      sub_26BCC3C();
+    v34 = v33->_0.element_class;
+    if ( !v34 )
+      sub_26BCC3C();
+    name = (int)v34->name;
+    if ( name <= 22 )
+    {
+      if ( name <= 19 )
+      {
+        switch ( name )
+        {
+          case 12:
+            v63 = CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::SceneManager>::get_Instance);
+            if ( !v63 )
+              sub_26BCC3C();
+            cctor_finished_or_no_cctor = TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor;
+            if ( LODWORD(v63[2].monitor) )
+            {
+              if ( !cctor_finished_or_no_cctor )
+                sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+              v65 = Sekai::ScreenManager::get_Instance(0);
+              v66.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v66.rgctxDataDummy + 309) & 1) == 0 )
+                v66.rgctxDataDummy = (void *)sub_26ED958();
+              if ( !*((_DWORD *)v66.rgctxDataDummy + 56) )
+                ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v66.rgctxDataDummy);
+              v67.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v67.rgctxDataDummy + 309) & 1) == 0 )
+                v67.rgctxDataDummy = (void *)sub_26ED958();
+              v68 = *(Action **)(*((_QWORD *)v67.rgctxDataDummy + 23) + 48LL);
+              if ( !v68 )
+              {
+                v69.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+                if ( (*(_WORD *)((_BYTE *)v69.rgctxDataDummy + 309) & 1) == 0 )
+                  v69.rgctxDataDummy = (void *)sub_26ED958();
+                if ( !*((_DWORD *)v69.rgctxDataDummy + 56) )
+                  ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v69.rgctxDataDummy);
+                v70.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+                if ( (*(_WORD *)((_BYTE *)v70.rgctxDataDummy + 309) & 1) == 0 )
+                  v70.rgctxDataDummy = (void *)sub_26ED958();
+                v71 = (Object *)**((_QWORD **)v70.rgctxDataDummy + 23);
+                v68 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+                System::Action::Action(v68, v71, method->rgctx_data[13].rgctxDataDummy, 0);
+                v72.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+                if ( (*(_WORD *)((_BYTE *)v72.rgctxDataDummy + 309) & 1) == 0 )
+                  v72.rgctxDataDummy = (void *)sub_26ED958();
+                *(_QWORD *)(*((_QWORD *)v72.rgctxDataDummy + 23) + 48LL) = v68;
+                v73.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+                if ( (*(_WORD *)((_BYTE *)v73.rgctxDataDummy + 309) & 1) == 0 )
+                  v73.rgctxDataDummy = (void *)sub_26ED958();
+                sub_26BC90C(*((_QWORD *)v73.rgctxDataDummy + 23) + 48LL, v68);
+              }
+              if ( v65 )
+              {
+                Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+                  v65,
+                  DialogType__Enum_Common1ButtonDialog,
+                  (String *)"WORD_MAINTENANCE",
+                  (String *)"MSG_SERVER_MAINTENANCE",
+                  (String *)"WORD_OK",
+                  v68,
+                  DisplayLayerType__Enum_Layer_Overlay,
+                  DialogSize__Enum_Manual,
+                  1,
+                  MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+                return;
+              }
+            }
+            else
+            {
+              if ( !cctor_finished_or_no_cctor )
+                sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+              v128 = Sekai::ScreenManager::get_Instance(0);
+              v129.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v129.rgctxDataDummy + 309) & 1) == 0 )
+                v129.rgctxDataDummy = (void *)sub_26ED958();
+              if ( !*((_DWORD *)v129.rgctxDataDummy + 56) )
+                ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v129.rgctxDataDummy);
+              v130.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v130.rgctxDataDummy + 309) & 1) == 0 )
+                v130.rgctxDataDummy = (void *)sub_26ED958();
+              v131 = *(Action **)(*((_QWORD *)v130.rgctxDataDummy + 23) + 40LL);
+              if ( !v131 )
+              {
+                v132.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+                if ( (*(_WORD *)((_BYTE *)v132.rgctxDataDummy + 309) & 1) == 0 )
+                  v132.rgctxDataDummy = (void *)sub_26ED958();
+                if ( !*((_DWORD *)v132.rgctxDataDummy + 56) )
+                  ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v132.rgctxDataDummy);
+                v133.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+                if ( (*(_WORD *)((_BYTE *)v133.rgctxDataDummy + 309) & 1) == 0 )
+                  v133.rgctxDataDummy = (void *)sub_26ED958();
+                v134 = (Object *)**((_QWORD **)v133.rgctxDataDummy + 23);
+                v131 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+                System::Action::Action(v131, v134, method->rgctx_data[12].rgctxDataDummy, 0);
+                v135.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+                if ( (*(_WORD *)((_BYTE *)v135.rgctxDataDummy + 309) & 1) == 0 )
+                  v135.rgctxDataDummy = (void *)sub_26ED958();
+                *(_QWORD *)(*((_QWORD *)v135.rgctxDataDummy + 23) + 40LL) = v131;
+                v136.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+                if ( (*(_WORD *)((_BYTE *)v136.rgctxDataDummy + 309) & 1) == 0 )
+                  v136.rgctxDataDummy = (void *)sub_26ED958();
+                sub_26BC90C(*((_QWORD *)v136.rgctxDataDummy + 23) + 40LL, v131);
+              }
+              if ( v128 )
+              {
+                Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+                  v128,
+                  DialogType__Enum_TitleMaintenanceDialog,
+                  (String *)"WORD_MAINTENANCE",
+                  (String *)"MSG_SERVER_MAINTENANCE",
+                  (String *)"WORD_OK",
+                  v131,
+                  DisplayLayerType__Enum_Layer_Overlay,
+                  DialogSize__Enum_Manual,
+                  1,
+                  MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::TitleMaintenanceDialog>);
+                return;
+              }
+            }
+            break;
+          case 13:
+            sub_26BC990(
+              v33,
+              *(_QWORD *)(*(_QWORD *)(*(_QWORD *)(*((_QWORD *)method->rgctx_data[14].rgctxDataDummy + 4) + 192LL) + 8LL)
+                        + 128LL)
+            + 320LL);
+            if ( !*p_CS___8__locals1 )
+              sub_26BCC3C();
+            v95 = (*p_CS___8__locals1)[1].klass;
+            if ( !v95 )
+              sub_26BCC3C();
+            castClass = v95->_0.castClass;
+            if ( castClass && !System::String::IsNullOrEmpty((String *)castClass->byval_arg.data.dummy, 0) )
+            {
+              v98 = *p_CS___8__locals1;
+              if ( !*p_CS___8__locals1 )
+                sub_26BCC3C();
+              v137 = v98[1].klass;
+              if ( !v137 )
+                sub_26BCC3C();
+              v138 = v137->_0.castClass;
+              if ( !v138 )
+                sub_26BCC3C();
+              Empty = (String *)v138->byval_arg.data.dummy;
+            }
+            else
+            {
+              if ( !TypeInfo::Sekai::WordingManager->_1.cctor_finished_or_no_cctor )
+                sub_26BCB08(TypeInfo::Sekai::WordingManager);
+              v97 = Sekai::WordingManager::Get((String *)"MSG_MODULE_MAINTENANCE", 0);
+              v98 = *p_CS___8__locals1;
+              if ( !*p_CS___8__locals1 )
+                sub_26BCC3C();
+              Empty = v97;
+            }
+            v139 = v98[1].klass;
+            if ( !v139 )
+              sub_26BCC3C();
+            interopData = (int)v139->_0.interopData;
+            if ( interopData )
+            {
+              if ( interopData == 1 )
+              {
+                if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+                  sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+                v141 = Sekai::ScreenManager::get_Instance(0);
+                v142 = *p_CS___8__locals1;
+                v143 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+                System::Action::Action(v143, v142, method->rgctx_data[17].rgctxDataDummy, 0);
+                if ( !v141 )
+                  sub_26BCC3C();
+                Sekai::ScreenManager::ShowSubWindowDialog<System::Object>(
+                  v141,
+                  Empty,
+                  v143,
+                  1,
+                  DialogType__Enum_SubWindowDialog,
+                  DisplayLayerType__Enum_Layer_Overlay,
+                  MethodInfo::Sekai::ScreenManager::ShowSubWindowDialog<Sekai::SubWindowDialog>);
+              }
+              return;
+            }
+            if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+              sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+            v144 = Sekai::ScreenManager::get_Instance(0);
+            v145 = TypeInfo::System::String->static_fields->Empty;
+            v146.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v146.rgctxDataDummy + 309) & 1) == 0 )
+              v146.rgctxDataDummy = (void *)sub_26ED958();
+            if ( !*((_DWORD *)v146.rgctxDataDummy + 56) )
+              ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v146.rgctxDataDummy);
+            v147.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v147.rgctxDataDummy + 309) & 1) == 0 )
+              v147.rgctxDataDummy = (void *)sub_26ED958();
+            v148 = *(Action **)(*((_QWORD *)v147.rgctxDataDummy + 23) + 56LL);
+            if ( !v148 )
+            {
+              v149.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v149.rgctxDataDummy + 309) & 1) == 0 )
+                v149.rgctxDataDummy = (void *)sub_26ED958();
+              if ( !*((_DWORD *)v149.rgctxDataDummy + 56) )
+                ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v149.rgctxDataDummy);
+              v150.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v150.rgctxDataDummy + 309) & 1) == 0 )
+                v150.rgctxDataDummy = (void *)sub_26ED958();
+              v151 = (Object *)**((_QWORD **)v150.rgctxDataDummy + 23);
+              v148 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+              System::Action::Action(v148, v151, method->rgctx_data[16].rgctxDataDummy, 0);
+              v152.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v152.rgctxDataDummy + 309) & 1) == 0 )
+                v152.rgctxDataDummy = (void *)sub_26ED958();
+              *(_QWORD *)(*((_QWORD *)v152.rgctxDataDummy + 23) + 56LL) = v148;
+              v153.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v153.rgctxDataDummy + 309) & 1) == 0 )
+                v153.rgctxDataDummy = (void *)sub_26ED958();
+              sub_26BC90C(*((_QWORD *)v153.rgctxDataDummy + 23) + 56LL, v148);
+            }
+            if ( v144 )
+            {
+              v127 = (Common1ButtonDialog *)Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+                                              v144,
+                                              DialogType__Enum_Common1ButtonDialog,
+                                              (String *)"WORD_MODULE_MAINTENANCE",
+                                              v145,
+                                              (String *)"WORD_OK",
+                                              v148,
+                                              DisplayLayerType__Enum_Layer_Overlay,
+                                              DialogSize__Enum_Manual,
+                                              1,
+                                              MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+              if ( !v127 )
+                sub_26BCC3C();
+              goto LABEL_305;
+            }
+            break;
+          case 19:
+            if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+              sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+            v36 = Sekai::ScreenManager::get_Instance(0);
+            v37.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v37.rgctxDataDummy + 309) & 1) == 0 )
+              v37.rgctxDataDummy = (void *)sub_26ED958();
+            if ( !*((_DWORD *)v37.rgctxDataDummy + 56) )
+              ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v37.rgctxDataDummy);
+            v38.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v38.rgctxDataDummy + 309) & 1) == 0 )
+              v38.rgctxDataDummy = (void *)sub_26ED958();
+            v39 = *(Action **)(*((_QWORD *)v38.rgctxDataDummy + 23) + 8LL);
+            if ( !v39 )
+            {
+              v40.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v40.rgctxDataDummy + 309) & 1) == 0 )
+                v40.rgctxDataDummy = (void *)sub_26ED958();
+              if ( !*((_DWORD *)v40.rgctxDataDummy + 56) )
+                ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v40.rgctxDataDummy);
+              v41.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v41.rgctxDataDummy + 309) & 1) == 0 )
+                v41.rgctxDataDummy = (void *)sub_26ED958();
+              v42 = (Object *)**((_QWORD **)v41.rgctxDataDummy + 23);
+              v39 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+              System::Action::Action(v39, v42, method->rgctx_data[8].rgctxDataDummy, 0);
+              v43.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v43.rgctxDataDummy + 309) & 1) == 0 )
+                v43.rgctxDataDummy = (void *)sub_26ED958();
+              *(_QWORD *)(*((_QWORD *)v43.rgctxDataDummy + 23) + 8LL) = v39;
+              v44.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+              if ( (*(_WORD *)((_BYTE *)v44.rgctxDataDummy + 309) & 1) == 0 )
+                v44.rgctxDataDummy = (void *)sub_26ED958();
+              sub_26BC90C(*((_QWORD *)v44.rgctxDataDummy + 23) + 8LL, v39);
+            }
+            if ( v36 )
+            {
+              Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+                v36,
+                DialogType__Enum_Common1ButtonMediumDialog,
+                (String *)"WORD_UPDATE",
+                (String *)"MSG_API_UPDATE_APPLICATION",
+                (String *)"WORD_UPDATE",
+                v39,
+                DisplayLayerType__Enum_Layer_Overlay,
+                DialogSize__Enum_Manual,
+                1,
+                MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+              return;
+            }
+            break;
+          default:
+            goto LABEL_301;
+        }
+LABEL_387:
+        sub_26BCC3C();
+      }
+      if ( name == 20 )
+      {
+        if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+          sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+        v83 = Sekai::ScreenManager::get_Instance(0);
+        v84.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+        if ( (*(_WORD *)((_BYTE *)v84.rgctxDataDummy + 309) & 1) == 0 )
+          v84.rgctxDataDummy = (void *)sub_26ED958();
+        if ( !*((_DWORD *)v84.rgctxDataDummy + 56) )
+          ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v84.rgctxDataDummy);
+        v85.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+        if ( (*(_WORD *)((_BYTE *)v85.rgctxDataDummy + 309) & 1) == 0 )
+          v85.rgctxDataDummy = (void *)sub_26ED958();
+        v86 = *(Action **)(*((_QWORD *)v85.rgctxDataDummy + 23) + 16LL);
+        if ( !v86 )
+        {
+          v87.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v87.rgctxDataDummy + 309) & 1) == 0 )
+            v87.rgctxDataDummy = (void *)sub_26ED958();
+          if ( !*((_DWORD *)v87.rgctxDataDummy + 56) )
+            ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v87.rgctxDataDummy);
+          v88.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v88.rgctxDataDummy + 309) & 1) == 0 )
+            v88.rgctxDataDummy = (void *)sub_26ED958();
+          v89 = (Object *)**((_QWORD **)v88.rgctxDataDummy + 23);
+          v86 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+          System::Action::Action(v86, v89, method->rgctx_data[9].rgctxDataDummy, 0);
+          v90.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v90.rgctxDataDummy + 309) & 1) == 0 )
+            v90.rgctxDataDummy = (void *)sub_26ED958();
+          *(_QWORD *)(*((_QWORD *)v90.rgctxDataDummy + 23) + 16LL) = v86;
+          v91.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v91.rgctxDataDummy + 309) & 1) == 0 )
+            v91.rgctxDataDummy = (void *)sub_26ED958();
+          sub_26BC90C(*((_QWORD *)v91.rgctxDataDummy + 23) + 16LL, v86);
+        }
+        if ( v83 )
+        {
+          Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+            v83,
+            DialogType__Enum_Common1ButtonDialog,
+            (String *)"WORD_UPDATE",
+            (String *)"MSG_API_UPDATE_DATA_VERSION",
+            (String *)"WORD_OK",
+            v86,
+            DisplayLayerType__Enum_Layer_Overlay,
+            DialogSize__Enum_Manual,
+            1,
+            MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+          return;
+        }
+        goto LABEL_387;
+      }
+      if ( name != 21 )
+      {
+        if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+          sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+        v54 = Sekai::ScreenManager::get_Instance(0);
+        v55.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+        if ( (*(_WORD *)((_BYTE *)v55.rgctxDataDummy + 309) & 1) == 0 )
+          v55.rgctxDataDummy = (void *)sub_26ED958();
+        if ( !*((_DWORD *)v55.rgctxDataDummy + 56) )
+          ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v55.rgctxDataDummy);
+        v56.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+        if ( (*(_WORD *)((_BYTE *)v56.rgctxDataDummy + 309) & 1) == 0 )
+          v56.rgctxDataDummy = (void *)sub_26ED958();
+        v57 = *(Action **)(*((_QWORD *)v56.rgctxDataDummy + 23) + 64LL);
+        if ( !v57 )
+        {
+          v58.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v58.rgctxDataDummy + 309) & 1) == 0 )
+            v58.rgctxDataDummy = (void *)sub_26ED958();
+          if ( !*((_DWORD *)v58.rgctxDataDummy + 56) )
+            ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v58.rgctxDataDummy);
+          v59.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v59.rgctxDataDummy + 309) & 1) == 0 )
+            v59.rgctxDataDummy = (void *)sub_26ED958();
+          v60 = (Object *)**((_QWORD **)v59.rgctxDataDummy + 23);
+          v57 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+          System::Action::Action(v57, v60, method->rgctx_data[18].rgctxDataDummy, 0);
+          v61.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v61.rgctxDataDummy + 309) & 1) == 0 )
+            v61.rgctxDataDummy = (void *)sub_26ED958();
+          *(_QWORD *)(*((_QWORD *)v61.rgctxDataDummy + 23) + 64LL) = v57;
+          v62.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v62.rgctxDataDummy + 309) & 1) == 0 )
+            v62.rgctxDataDummy = (void *)sub_26ED958();
+          sub_26BC90C(*((_QWORD *)v62.rgctxDataDummy + 23) + 64LL, v57);
+        }
+        if ( v54 )
+        {
+          Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+            v54,
+            DialogType__Enum_Common1ButtonDialog,
+            (String *)"MSG_CS_BAN",
+            (String *)"WORD_OK",
+            v57,
+            DisplayLayerType__Enum_Layer_Overlay,
+            DialogSize__Enum_Manual,
+            0,
+            MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+          return;
+        }
+        goto LABEL_387;
+      }
+      if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+        sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+      v99 = Sekai::ScreenManager::get_Instance(0);
+      v108.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+      if ( (*(_WORD *)((_BYTE *)v108.rgctxDataDummy + 309) & 1) == 0 )
+        v108.rgctxDataDummy = (void *)sub_26ED958();
+      if ( !*((_DWORD *)v108.rgctxDataDummy + 56) )
+        ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v108.rgctxDataDummy);
+      v109.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+      if ( (*(_WORD *)((_BYTE *)v109.rgctxDataDummy + 309) & 1) == 0 )
+        v109.rgctxDataDummy = (void *)sub_26ED958();
+      v102 = *(Action **)(*((_QWORD *)v109.rgctxDataDummy + 23) + 88LL);
+      if ( !v102 )
+      {
+        v110.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+        if ( (*(_WORD *)((_BYTE *)v110.rgctxDataDummy + 309) & 1) == 0 )
+          v110.rgctxDataDummy = (void *)sub_26ED958();
+        if ( !*((_DWORD *)v110.rgctxDataDummy + 56) )
+          ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v110.rgctxDataDummy);
+        v111.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+        if ( (*(_WORD *)((_BYTE *)v111.rgctxDataDummy + 309) & 1) == 0 )
+          v111.rgctxDataDummy = (void *)sub_26ED958();
+        v112 = (Object *)**((_QWORD **)v111.rgctxDataDummy + 23);
+        v102 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+        System::Action::Action(v102, v112, method->rgctx_data[21].rgctxDataDummy, 0);
+        v113.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+        if ( (*(_WORD *)((_BYTE *)v113.rgctxDataDummy + 309) & 1) == 0 )
+          v113.rgctxDataDummy = (void *)sub_26ED958();
+        *(_QWORD *)(*((_QWORD *)v113.rgctxDataDummy + 23) + 88LL) = v102;
+        v114.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+        if ( (*(_WORD *)((_BYTE *)v114.rgctxDataDummy + 309) & 1) == 0 )
+          v114.rgctxDataDummy = (void *)sub_26ED958();
+        sub_26BC90C(*((_QWORD *)v114.rgctxDataDummy + 23) + 88LL, v102);
+      }
+      if ( !v99 )
+        goto LABEL_387;
+LABEL_252:
+      Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+        v99,
+        DialogType__Enum_Common1ButtonDialog,
+        (String *)"WORD_ERROR",
+        (String *)"WORD_ERROR",
+        (String *)"WORD_OK",
+        v102,
+        DisplayLayerType__Enum_Layer_Overlay,
+        DialogSize__Enum_Manual,
+        1,
+        MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+      return;
+    }
+    if ( name > 27 )
+    {
+      switch ( name )
+      {
+        case 28:
+          if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+            sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+          v92 = Sekai::ScreenManager::get_Instance(0);
+          v93 = *p_CS___8__locals1;
+          v94 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+          System::Action::Action(v94, v93, method->rgctx_data[22].rgctxDataDummy, 0);
+          if ( !v92 )
+            sub_26BCC3C();
+          Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+            v92,
+            DialogType__Enum_Common1ButtonDialog,
+            (String *)"WORD_NEWS",
+            (String *)"MSG_APRIL_FOOL_2022_VOCAL_OUT_OF_PERIOD",
+            (String *)"WORD_OK",
+            v94,
+            DisplayLayerType__Enum_Layer_Overlay,
+            DialogSize__Enum_Manual,
+            1,
+            MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+          return;
+        case 29:
+          v115 = (String *)*((_QWORD *)&v33->_0.byval_arg + 1);
+          if ( !v115 )
+            sub_26BCC3C();
+          if ( System::String::Contains(v115, (String *)"isForceAllReload=false&name=user_billing_shop", 0) )
+            return;
+          v116 = CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::SceneManager>::get_Instance);
+          if ( !v116 )
+            sub_26BCC3C();
+          if ( !LODWORD(v116[2].monitor) )
+            return;
+          Sekai::Multiplay::MultiLiveUtility::DisconnectMultiLive(0);
+          if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+            sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+          v117 = Sekai::ScreenManager::get_Instance(0);
+          v118.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v118.rgctxDataDummy + 309) & 1) == 0 )
+            v118.rgctxDataDummy = (void *)sub_26ED958();
+          if ( !*((_DWORD *)v118.rgctxDataDummy + 56) )
+            ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v118.rgctxDataDummy);
+          v119.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v119.rgctxDataDummy + 309) & 1) == 0 )
+            v119.rgctxDataDummy = (void *)sub_26ED958();
+          v120 = *(Action **)(*((_QWORD *)v119.rgctxDataDummy + 23) + 24LL);
+          if ( !v120 )
+          {
+            v121.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v121.rgctxDataDummy + 309) & 1) == 0 )
+              v121.rgctxDataDummy = (void *)sub_26ED958();
+            if ( !*((_DWORD *)v121.rgctxDataDummy + 56) )
+              ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v121.rgctxDataDummy);
+            v122.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v122.rgctxDataDummy + 309) & 1) == 0 )
+              v122.rgctxDataDummy = (void *)sub_26ED958();
+            v123 = (Object *)**((_QWORD **)v122.rgctxDataDummy + 23);
+            v120 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+            System::Action::Action(v120, v123, method->rgctx_data[10].rgctxDataDummy, 0);
+            v124.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v124.rgctxDataDummy + 309) & 1) == 0 )
+              v124.rgctxDataDummy = (void *)sub_26ED958();
+            *(_QWORD *)(*((_QWORD *)v124.rgctxDataDummy + 23) + 24LL) = v120;
+            v125.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v125.rgctxDataDummy + 309) & 1) == 0 )
+              v125.rgctxDataDummy = (void *)sub_26ED958();
+            sub_26BC90C(*((_QWORD *)v125.rgctxDataDummy + 23) + 24LL, v120);
+          }
+          if ( v117 )
+          {
+            Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+              v117,
+              DialogType__Enum_Common1ButtonDialog,
+              (String *)"WORD_UPDATE",
+              (String *)"MSG_API_UPDATE_RULE_AGREEMENT_VERSION",
+              (String *)"WORD_OK",
+              v120,
+              DisplayLayerType__Enum_Layer_Overlay,
+              DialogSize__Enum_Manual,
+              1,
+              MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+            return;
+          }
+          goto LABEL_387;
+        case 30:
+          Sekai::FriendUtility::ShowSimpleDialog(FriendUtility_SimpleDialogType__Enum_UserBlockCountLimit, 0);
+          return;
+      }
+    }
+    else
+    {
+      switch ( name )
+      {
+        case 23:
+          if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+            sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+          v74 = Sekai::ScreenManager::get_Instance(0);
+          v75.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v75.rgctxDataDummy + 309) & 1) == 0 )
+            v75.rgctxDataDummy = (void *)sub_26ED958();
+          if ( !*((_DWORD *)v75.rgctxDataDummy + 56) )
+            ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v75.rgctxDataDummy);
+          v76.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v76.rgctxDataDummy + 309) & 1) == 0 )
+            v76.rgctxDataDummy = (void *)sub_26ED958();
+          v77 = *(Action **)(*((_QWORD *)v76.rgctxDataDummy + 23) + 72LL);
+          if ( !v77 )
+          {
+            v78.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v78.rgctxDataDummy + 309) & 1) == 0 )
+              v78.rgctxDataDummy = (void *)sub_26ED958();
+            if ( !*((_DWORD *)v78.rgctxDataDummy + 56) )
+              ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v78.rgctxDataDummy);
+            v79.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v79.rgctxDataDummy + 309) & 1) == 0 )
+              v79.rgctxDataDummy = (void *)sub_26ED958();
+            v80 = (Object *)**((_QWORD **)v79.rgctxDataDummy + 23);
+            v77 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+            System::Action::Action(v77, v80, method->rgctx_data[19].rgctxDataDummy, 0);
+            v81.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v81.rgctxDataDummy + 309) & 1) == 0 )
+              v81.rgctxDataDummy = (void *)sub_26ED958();
+            *(_QWORD *)(*((_QWORD *)v81.rgctxDataDummy + 23) + 72LL) = v77;
+            v82.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v82.rgctxDataDummy + 309) & 1) == 0 )
+              v82.rgctxDataDummy = (void *)sub_26ED958();
+            sub_26BC90C(*((_QWORD *)v82.rgctxDataDummy + 23) + 72LL, v77);
+          }
+          if ( v74 )
+          {
+            Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+              v74,
+              DialogType__Enum_Common1ButtonDialog,
+              (String *)"MSG_LOGIN_BAN",
+              (String *)"WORD_OK",
+              v77,
+              DisplayLayerType__Enum_Layer_Overlay,
+              DialogSize__Enum_Manual,
+              0,
+              MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+            return;
+          }
+          goto LABEL_387;
+        case 24:
+          if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+            sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+          v99 = Sekai::ScreenManager::get_Instance(0);
+          v100.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v100.rgctxDataDummy + 309) & 1) == 0 )
+            v100.rgctxDataDummy = (void *)sub_26ED958();
+          if ( !*((_DWORD *)v100.rgctxDataDummy + 56) )
+            ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v100.rgctxDataDummy);
+          v101.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v101.rgctxDataDummy + 309) & 1) == 0 )
+            v101.rgctxDataDummy = (void *)sub_26ED958();
+          v102 = *(Action **)(*((_QWORD *)v101.rgctxDataDummy + 23) + 80LL);
+          if ( !v102 )
+          {
+            v103.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v103.rgctxDataDummy + 309) & 1) == 0 )
+              v103.rgctxDataDummy = (void *)sub_26ED958();
+            if ( !*((_DWORD *)v103.rgctxDataDummy + 56) )
+              ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v103.rgctxDataDummy);
+            v104.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v104.rgctxDataDummy + 309) & 1) == 0 )
+              v104.rgctxDataDummy = (void *)sub_26ED958();
+            v105 = (Object *)**((_QWORD **)v104.rgctxDataDummy + 23);
+            v102 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+            System::Action::Action(v102, v105, method->rgctx_data[20].rgctxDataDummy, 0);
+            v106.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v106.rgctxDataDummy + 309) & 1) == 0 )
+              v106.rgctxDataDummy = (void *)sub_26ED958();
+            *(_QWORD *)(*((_QWORD *)v106.rgctxDataDummy + 23) + 80LL) = v102;
+            v107.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v107.rgctxDataDummy + 309) & 1) == 0 )
+              v107.rgctxDataDummy = (void *)sub_26ED958();
+            sub_26BC90C(*((_QWORD *)v107.rgctxDataDummy + 23) + 80LL, v102);
+          }
+          if ( !v99 )
+            goto LABEL_387;
+          goto LABEL_252;
+        case 27:
+          if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+            sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+          v45 = Sekai::ScreenManager::get_Instance(0);
+          v46.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v46.rgctxDataDummy + 309) & 1) == 0 )
+            v46.rgctxDataDummy = (void *)sub_26ED958();
+          if ( !*((_DWORD *)v46.rgctxDataDummy + 56) )
+            ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v46.rgctxDataDummy);
+          v47.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+          if ( (*(_WORD *)((_BYTE *)v47.rgctxDataDummy + 309) & 1) == 0 )
+            v47.rgctxDataDummy = (void *)sub_26ED958();
+          v48 = *(Action **)(*((_QWORD *)v47.rgctxDataDummy + 23) + 32LL);
+          if ( !v48 )
+          {
+            v49.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v49.rgctxDataDummy + 309) & 1) == 0 )
+              v49.rgctxDataDummy = (void *)sub_26ED958();
+            if ( !*((_DWORD *)v49.rgctxDataDummy + 56) )
+              ((void (__fastcall *)(_QWORD))sub_26BCB08)((Il2CppRGCTXData)v49.rgctxDataDummy);
+            v50.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v50.rgctxDataDummy + 309) & 1) == 0 )
+              v50.rgctxDataDummy = (void *)sub_26ED958();
+            v51 = (Object *)**((_QWORD **)v50.rgctxDataDummy + 23);
+            v48 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+            System::Action::Action(v48, v51, method->rgctx_data[11].rgctxDataDummy, 0);
+            v52.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v52.rgctxDataDummy + 309) & 1) == 0 )
+              v52.rgctxDataDummy = (void *)sub_26ED958();
+            *(_QWORD *)(*((_QWORD *)v52.rgctxDataDummy + 23) + 32LL) = v48;
+            v53.rgctxDataDummy = method->rgctx_data[7].rgctxDataDummy;
+            if ( (*(_WORD *)((_BYTE *)v53.rgctxDataDummy + 309) & 1) == 0 )
+              v53.rgctxDataDummy = (void *)sub_26ED958();
+            sub_26BC90C(*((_QWORD *)v53.rgctxDataDummy + 23) + 32LL, v48);
+          }
+          if ( v45 )
+          {
+            Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+              v45,
+              DialogType__Enum_Common1ButtonDialog,
+              (String *)"WORD_ERROR",
+              (String *)"MSG_API_SESSION_ERROR",
+              (String *)"WORD_OK",
+              v48,
+              DisplayLayerType__Enum_Layer_Overlay,
+              DialogSize__Enum_Manual,
+              1,
+              MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+            return;
+          }
+          goto LABEL_387;
+      }
+    }
+LABEL_301:
+    if ( AfterErrorDetaction_k__BackingField == 3 )
+    {
+      if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+        sub_26BCB08(TypeInfo::Sekai::ScreenManager);
+      v157 = Sekai::ScreenManager::get_Instance(0);
+      v158 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+      System::Action::Action(v158, (Object *)v12, method->rgctx_data[26].rgctxDataDummy, 0);
+      if ( !v157 )
+        sub_26BCC3C();
+      Sekai::ScreenManager::ShowSubWindowDialog<System::Object>(
+        v157,
+        Empty,
+        v158,
+        1,
+        DialogType__Enum_SubWindowDialog,
+        DisplayLayerType__Enum_Layer_Dialog,
+        MethodInfo::Sekai::ScreenManager::ShowSubWindowDialog<Sekai::SubWindowDialog>);
+      return;
+    }
+    if ( AfterErrorDetaction_k__BackingField == 1 )
+    {
+      v154 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+      System::Action::Action(v154, v32, method->rgctx_data[24].rgctxDataDummy, 0);
+      v155 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+      System::Action::Action(v155, (Object *)v12, method->rgctx_data[25].rgctxDataDummy, 0);
+      v156 = Sekai::DialogUtility::ShowApiError2ButtonDialog(
+               (String *)"",
+               (String *)"WORD_RETRY",
+               v154,
+               v155,
+               DialogSize__Enum_Manual,
+               0);
+      if ( !v156 )
+        sub_26BCC3C();
+      Sekai::Common2ButtonDialog::SetMessageBodyText(v156, Empty, 0);
+      return;
+    }
+    if ( AfterErrorDetaction_k__BackingField )
+      return;
+    v126 = (Action *)sub_26BCC28(TypeInfo::System::Action);
+    System::Action::Action(v126, (Object *)v12, method->rgctx_data[23].rgctxDataDummy, 0);
+    v127 = Sekai::DialogUtility::ShowApiError1ButtonDialog(
+             (String *)"",
+             (String *)"WORD_OK",
+             v126,
+             DialogSize__Enum_Manual,
+             0);
+    if ( !(4562188在這)v127 )
+      sub_26BCC3C();
+LABEL_305:
+    Sekai::Common1ButtonDialog::SetMessageBodyText(v127, Empty, 0);
+  }
+}
