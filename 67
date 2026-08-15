@@ -1,0 +1,57 @@
+// Common1ButtonDialog ShowApiError1ButtonDialog(String, String, Action, DialogSize)
+Common1ButtonDialog *__fastcall Sekai::DialogUtility::ShowApiError1ButtonDialog(
+        String *messageBodyKey,
+        String *okButtonLabelKey,
+        Action *onClickOK,
+        DialogSize__Enum dialogSize,
+        MethodInfo *method)
+{
+  struct ScreenManager__Class *v9; // x0
+  ScreenManager *Instance; // x0
+
+  if ( (byte_7967BAF & 1) != 0 )
+  {
+    v9 = TypeInfo::Sekai::ScreenManager;
+    if ( TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+      goto LABEL_3;
+LABEL_6:
+    sub_26BCB08(v9);
+    Instance = Sekai::ScreenManager::get_Instance(0);
+    if ( Instance )
+      return (Common1ButtonDialog *)Sekai::ScreenManager::Show1ButtonDialog<System::Object>(
+                                      Instance,
+                                      (DialogType__Enum)(dialogSize == DialogSize__Enum_Medium),
+                                      (String *)"WORD_API_ERROR",
+                                      messageBodyKey,
+                                      okButtonLabelKey,
+                                      onClickOK,
+                                      DisplayLayerType__Enum_Layer_Overlay,
+                                      dialogSize,
+                                      0,
+                                      MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+LABEL_7:
+    sub_26BCC3C();
+  }
+  sub_26BC96C(&MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+  sub_26BC96C(&TypeInfo::Sekai::ScreenManager);
+  sub_26BC96C(&StringLiteral_WORD_API_ERROR);
+  byte_7967BAF = 1;
+  v9 = TypeInfo::Sekai::ScreenManager;
+  if ( !TypeInfo::Sekai::ScreenManager->_1.cctor_finished_or_no_cctor )
+    goto LABEL_6;
+LABEL_3:
+  Instance = Sekai::ScreenManager::get_Instance(0);
+  if ( !Instance )
+    goto LABEL_7;
+  return (Common1ButtonDialog *)Sekai::ScreenManager::Show1ButtonDialog<System::Object>(29FB23C)(
+                                  Instance,
+                                  (DialogType__Enum)(dialogSize == DialogSize__Enum_Medium),
+                                  (String *)"WORD_API_ERROR",
+                                  messageBodyKey,
+                                  okButtonLabelKey,
+                                  onClickOK,
+                                  DisplayLayerType__Enum_Layer_Overlay,
+                                  dialogSize,
+                                  0,
+                                  MethodInfo::Sekai::ScreenManager::Show1ButtonDialog<Sekai::Common1ButtonDialog>);
+}
