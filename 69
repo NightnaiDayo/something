@@ -1,0 +1,57 @@
+// Void InvokeMoveNext(IEnumerator, IntPtr)
+void __fastcall UnityEngine::SetupCoroutine::InvokeMoveNext(
+        IEnumerator *enumerator,
+        void *returnValueAddress,
+        MethodInfo *method)
+{
+  Void *v5; // x0
+  Void *v6; // x20
+  IEnumerator__Class *klass; // x8
+  __int64 v8; // x9
+  int32_t *p_offset; // x10
+  __int64 v10; // x0
+  __int64 v11; // x0
+  ArgumentException *v12; // x19
+  String *v13; // x20
+  String *v14; // x0
+  __int64 v15; // x0
+
+  if ( (byte_797DC50 & 1) == 0 )
+  {
+    sub_26BC96C(&TypeInfo::System::Collections::IEnumerator);
+    byte_797DC50 = 1;
+  }
+  if ( System::IntPtr::op_Equality(returnValueAddress, 0, 0) )
+  {
+    v11 = sub_26BC984(&TypeInfo::System::ArgumentException);
+    v12 = (ArgumentException *)sub_26BCC28(v11);
+    v13 = (String *)sub_26BC984(&StringLiteral_Return_value_address_cannot_be_0);
+    v14 = (String *)sub_26BC984(&StringLiteral_returnValueAddress);
+    System::ArgumentException::ArgumentException(v12, v13, v14, 0);
+    v15 = sub_26BC984(&MethodInfo::UnityEngine::SetupCoroutine::InvokeMoveNext);
+    sub_26BCAF4(v12, v15);
+  }
+  v5 = System::IntPtr::op_Explicit(returnValueAddress, 0);
+  if ( !enumerator )
+    sub_26BCC3C();
+  v6 = v5;
+  klass = enumerator->klass;
+  v8 = *(unsigned __int16 *)&enumerator->klass->_1.rank;
+  if ( *(_WORD *)&enumerator->klass->_1.rank )
+  {
+    p_offset = &klass->interfaceOffsets->offset;
+    while ( *((struct IEnumerator__Class **)p_offset - 1) != TypeInfo::System::Collections::IEnumerator )
+    {
+      p_offset += 4;
+      if ( !--v8 )
+        goto LABEL_9;
+    }
+    v10 = (__int64)&klass->vtable + 16 * *p_offset;
+  }
+  else
+  {
+LABEL_9:
+    v10 = sub_26EDC78(enumerator, TypeInfo::System::Collections::IEnumerator, 0);
+  }
+  *(_BYTE *)v6 (5777000)= (*(__int64 (__fastcall **)(IEnumerator *, _QWORD))v10)(enumerator, *(_QWORD *)(v10 + 8));
+}
