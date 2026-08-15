@@ -1,0 +1,1404 @@
+// Boolean MoveNext()
+bool __fastcall Sekai::APICore_2_A_B_::_SendRequest_d__35<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::MoveNext(
+        APICore_2_A_B_SendRequest_d_35_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *this,
+        MethodInfo *method)
+{
+  const Il2CppRGCTXData *rgctx_data; // x8
+  size_t v4; // x24
+  __int64 v5; // x22
+  int32_t _1__state; // w9
+  APICore_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *_4__this; // x20
+  __int64 v8; // x8
+  Dictionary_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *v9; // x22
+  Object *v10; // x0
+  ApplicationLocalVersionData *VersionData; // x0
+  ApplicationLocalVersionData *v12; // x0
+  String *deviceModel; // x0
+  String *operatingSystem; // x0
+  Object *v15; // x0
+  Object *v16; // x0
+  UnityWebRequestClient *http; // x0
+  UnityWebRequestClient *v18; // x0
+  Dictionary_2_System_String_System_String_ *ResponseHeaders; // x0
+  UnityWebRequestClient *v20; // x0
+  Dictionary_2_System_String_System_String_ *v21; // x0
+  Il2CppMethodPointer v22; // x23
+  Object *v23; // x0
+  UnityWebRequestClient *v24; // x0
+  Dictionary_2_System_String_System_String_ *v25; // x0
+  UnityWebRequestClient *v26; // x0
+  Dictionary_2_System_String_System_String_ *v27; // x0
+  String *methodPointer; // x23
+  UnityWebRequestClient *v29; // x1
+  HttpResult *ResultInfo_k__BackingField; // x8
+  int HttpStatus_k__BackingField; // w9
+  UnityWebRequestClient *v32; // x0
+  Byte__Array *v33; // x0
+  ClientErrorResponse *v34; // x21
+  __int64 v35; // x0
+  UnityWebRequestClient *v36; // x8
+  HttpResult *v37; // x8
+  Object__Array *v38; // x21
+  __int64 v39; // x0
+  Object *v40; // x22
+  __int64 v41; // x0
+  Object *v42; // x22
+  __int64 v43; // x0
+  Object *v44; // x22
+  UnityWebRequestClient *v45; // x8
+  HttpResult *v46; // x8
+  int32_t v47; // w8
+  String *v48; // x0
+  Object *v49; // x22
+  String *UserExecuteLocationHeaderParam; // x0
+  Dictionary_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *OptionalRequestHeader_k__BackingField; // x0
+  Dictionary_2_TKey_TValue_KeyCollection_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *Keys; // x0
+  struct MethodInfo *v53; // x26
+  Il2CppClass *v54; // x0
+  __int64 v55; // x8
+  size_t v56; // x26
+  const void *v57; // x0
+  Dictionary_2_System_String_System_String_ *v58; // x0
+  __int64 v59; // x26
+  int32_t v60; // w8
+  UnityWebRequestClient *v61; // x0
+  UnityWebRequestClient *v62; // x0
+  Byte__Array *v63; // x26
+  MethodInfo *v64; // x19
+  const void *v65; // x0
+  MethodInfo *v66; // x19
+  const void *v67; // x26
+  Il2CppClass *v68; // x19
+  const Il2CppRGCTXData *v69; // x8
+  char *v70; // x0
+  MethodInfo *v71; // x19
+  __int64 v72; // x0
+  UnityWebRequestClient *v73; // x8
+  HttpResult *v74; // x8
+  __int64 v75; // x0
+  Object *v76; // x22
+  __int64 v77; // x0
+  Object *v78; // x22
+  __int64 v79; // x0
+  Object *api; // x22
+  UnityWebRequestClient *v81; // x8
+  HttpResult *v82; // x8
+  int32_t v83; // w8
+  String *v84; // x0
+  Object *v85; // x22
+  __int64 v86; // x0
+  UnityWebRequestClient *v87; // x8
+  HttpResult *v88; // x8
+  __int64 v89; // x0
+  Object *v90; // x22
+  __int64 v91; // x0
+  Object *v92; // x22
+  __int64 v93; // x0
+  Object *v94; // x22
+  UnityWebRequestClient *v95; // x8
+  HttpResult *v96; // x8
+  int32_t v97; // w8
+  String *v98; // x0
+  Object *v99; // x22
+  UnityWebRequestClient *v100; // x0
+  Byte__Array *ResponseBytes; // x0
+  __int64 v102; // x0
+  UnityWebRequestClient *v103; // x8
+  HttpResult *v104; // x8
+  __int64 v105; // x0
+  Object *v106; // x22
+  __int64 v107; // x0
+  Object *v108; // x22
+  __int64 v109; // x0
+  Object *v110; // x22
+  UnityWebRequestClient *v111; // x8
+  HttpResult *v112; // x8
+  int32_t v113; // w8
+  String *v114; // x0
+  Object *v115; // x22
+  __int64 v116; // x0
+  UnityWebRequestClient *v117; // x8
+  HttpResult *v118; // x8
+  Object__Array *v119; // x22
+  __int64 v120; // x0
+  Object *v121; // x23
+  __int64 v122; // x0
+  Object *v123; // x23
+  __int64 v124; // x0
+  Object *v125; // x23
+  UnityWebRequestClient *v126; // x8
+  HttpResult *v127; // x8
+  int32_t v128; // w8
+  String *v129; // x0
+  Object *v130; // x23
+  UnityWebRequestClient *v131; // x0
+  UnityWebRequestClient *v132; // x0
+  Byte__Array *v133; // x0
+  UnityWebRequestClient *v134; // x8
+  HttpResult *v135; // x8
+  int StatusCode_k__BackingField; // w8
+  __int64 v137; // x0
+  UnityWebRequestClient *v138; // x8
+  HttpResult *v139; // x8
+  __int64 v140; // x0
+  __int64 v141; // x22
+  __int64 v142; // x22
+  String *v143; // x22
+  UnityWebRequestClient *v144; // x8
+  HttpResult *v145; // x8
+  int32_t v146; // w8
+  String *v147; // x22
+  __int64 v148; // x0
+  UnityWebRequestClient *v149; // x8
+  HttpResult *v150; // x8
+  __int64 v151; // x0
+  __int64 v152; // x22
+  __int64 v153; // x22
+  String *v154; // x22
+  UnityWebRequestClient *v155; // x8
+  HttpResult *v156; // x8
+  int32_t v157; // w8
+  String *v158; // x22
+  Il2CppClass *klass; // t1
+  char *v160; // x23
+  Object *v161; // x0
+  FastAESCrypt *v162; // x0
+  Byte__Array *v163; // x25
+  UnityWebRequestClient *v164; // x23
+  String *v165; // x24
+  String *v166; // x26
+  UploadHandlerRaw *v167; // x27
+  UnityWebRequestClient *v168; // x22
+  CertificateHandler **v169; // x0
+  UnityWebRequestClient *v170; // x0
+  UnityWebRequestClient *v171; // x0
+  MonoBehaviour *parentObj; // x19
+  IEnumerator *v173; // x1
+  Object *started; // x0
+  bool result; // w0
+  MethodInfo *v176; // x19
+  String *ErrorCode_k__BackingField; // x22
+  String *v178; // x22
+  Object *Instance; // x0
+  Object *v180; // x0
+  String__StaticFields *static_fields; // x8
+  String *Empty; // x1
+  __int64 v183; // x0
+  __int64 v184; // x0
+  __int64 v185; // x0
+  __int64 v186; // x0
+  __int64 v187; // x0
+  __int64 v188; // x0
+  __int64 v189; // x0
+  __int64 v190; // x0
+  __int64 v191; // x0
+  __int64 v192; // x0
+  __int64 v193; // x0
+  __int64 v194; // x0
+  __int64 v195; // x0
+  __int64 v196; // x0
+  __int64 v197; // x0
+  __int64 v198; // x0
+  __int64 v199; // x0
+  __int64 v200; // x0
+  __int64 v201; // x0
+  __int64 v202; // x0
+  char *v203; // [xsp+0h] [xbp-E0h] BYREF
+  MethodInfo *v204; // [xsp+8h] [xbp-D8h]
+  int32_t v205; // [xsp+14h] [xbp-CCh] BYREF
+  MethodInfo methoda; // [xsp+18h] [xbp-C8h] BYREF
+  Guid v207; // [xsp+70h] [xbp-70h] BYREF
+  __int64 __dst; // [xsp+80h] [xbp-60h] BYREF
+
+  v204 = method;
+  if ( (byte_7973F3F & 1) == 0 )
+  {
+    sub_26BC96C(&TypeInfo::UnityEngine::Application);
+    sub_26BC96C(&TypeInfo::System::Boolean);
+    sub_26BC96C(&TypeInfo::System::Byte);
+    sub_26BC96C(&MethodInfo::Sekai::Extensions::CollectionExtensions::IsNullOrEmpty<wchar_t>);
+    sub_26BC96C(&MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::Add);
+    sub_26BC96C(&MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::ContainsKey);
+    sub_26BC96C(&MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::Dictionary);
+    sub_26BC96C(&MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::get_Item);
+    sub_26BC96C(&MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::get_Keys);
+    sub_26BC96C(&TypeInfo::System::Collections::Generic::Dictionary<System::String,System::String>);
+    sub_26BC96C(&MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<System::String,System::String>::Dispose);
+    sub_26BC96C(&MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<System::String,System::String>::MoveNext);
+    sub_26BC96C(&MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<System::String,System::String>::get_Current);
+    sub_26BC96C(&TypeInfo::Sekai::EnvironmentConfig);
+    sub_26BC96C(&TypeInfo::System::Int32);
+    sub_26BC96C(&MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue_::KeyCollection<System::String,System::String>::GetEnumerator);
+    sub_26BC96C(&TypeInfo::CP::LogUtility);
+    sub_26BC96C(&TypeInfo::Sekai::APICoreParam::Method);
+    sub_26BC96C(&TypeInfo::System::Object);
+    sub_26BC96C(&MethodInfo::CP::SingletonMonoBehaviour<AdjustManager>::get_ExistsInstance);
+    sub_26BC96C(&MethodInfo::CP::SingletonMonoBehaviour<AdjustManager>::get_Instance);
+    sub_26BC96C(&MethodInfo::CP::SingletonMonoBehaviour<Sekai::UserAccountManager>::get_Instance);
+    sub_26BC96C(&MethodInfo::CP::SingletonMonoBehaviour<Sekai::APIManager>::get_Instance);
+    sub_26BC96C(&TypeInfo::CP::HttpResult::Status);
+    sub_26BC96C(&TypeInfo::System::String);
+    sub_26BC96C(&TypeInfo::UnityEngine::Networking::UploadHandlerRaw);
+    sub_26BC96C(&TypeInfo::Sekai::UserDataManager);
+    sub_26BC96C(&StringLiteral__0___1___2____3__);
+    sub_26BC96C(&StringLiteral_X_Install_Id);
+    sub_26BC96C(&StringLiteral_X_KC);
+    sub_26BC96C(&StringLiteral_Accept);
+    sub_26BC96C(&StringLiteral_X_Request_Id);
+    sub_26BC96C(&StringLiteral_X_Session_Token);
+    sub_26BC96C(&StringLiteral_X_Data_Version);
+    sub_26BC96C(&StringLiteral_under_module_maintenance);
+    sub_26BC96C(&StringLiteral_X_Login_Bonus_Status);
+    sub_26BC96C(&StringLiteral_X_App_Hash);
+    sub_26BC96C(&StringLiteral_Content_Type_0);
+    sub_26BC96C(&StringLiteral_cs_ban);
+    sub_26BC96C(&StringLiteral_X_GA);
+    sub_26BC96C(&StringLiteral_user_block_count_limit);
+    sub_26BC96C(&StringLiteral_application_octet_stream);
+    sub_26BC96C(&StringLiteral_Cookie);
+    sub_26BC96C(&StringLiteral_X_AI);
+    sub_26BC96C(&StringLiteral_X_OperatingSystem);
+    sub_26BC96C(&StringLiteral_out_of_period_2022_april_fool);
+    sub_26BC96C(&StringLiteral_X_User_Execute_Location);
+    sub_26BC96C(&StringLiteral_X_Asset_Version);
+    sub_26BC96C(&StringLiteral_cs_inspecting);
+    sub_26BC96C(&StringLiteral_X_IF);
+    sub_26BC96C(&StringLiteral_X_MA);
+    sub_26BC96C(&StringLiteral_login_ban);
+    sub_26BC96C(&StringLiteral_X_App_Version);
+    sub_26BC96C(&StringLiteral_cheat);
+    sub_26BC96C(&StringLiteral_iOS);
+    sub_26BC96C(&StringLiteral_X_DeviceModel);
+    sub_26BC96C(&StringLiteral_X_Platform);
+    sub_26BC96C(&StringLiteral__Response__0___1___2____3__);
+    sub_26BC96C(&StringLiteral_session_error);
+    byte_7973F3F = 1;
+  }
+  rgctx_data = v204->klass->rgctx_data;
+  v4 = *((unsigned int *)rgctx_data[5].rgctxDataDummy + 63);
+  v5 = *((unsigned int *)rgctx_data[10].rgctxDataDummy + 63);
+  *(_QWORD *)&v207._a = 0;
+  *(_QWORD *)&v207._d = 0;
+  memset((char *)&methoda.parameters + 7, 0, 25);
+  LODWORD(methoda.return_type) = 0;
+  _1__state = this->__1__state;
+  _4__this = this->__4__this;
+  if ( _1__state == 1 )
+  {
+    this->__1__state = -1;
+    if ( _4__this )
+    {
+      http = _4__this->http;
+      if ( http )
+      {
+        if ( !CP::UnityWebRequestClient::get_ResponseHeaders(http, 0) )
+          goto LABEL_60;
+        v18 = _4__this->http;
+        if ( v18 )
+        {
+          ResponseHeaders = CP::UnityWebRequestClient::get_ResponseHeaders(v18, 0);
+          if ( ResponseHeaders )
+          {
+            if ( !(unsigned int)System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::ContainsKey(
+                                  ResponseHeaders,
+                                  "X-Session-Token",
+                                  MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::ContainsKey) )
+            {
+LABEL_51:
+              v24 = _4__this->http;
+              if ( !v24 )
+                sub_26BCC3C();
+              v25 = CP::UnityWebRequestClient::get_ResponseHeaders(v24, 0);
+              if ( !v25 )
+                sub_26BCC3C();
+              if ( (unsigned int)System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::ContainsKey(
+                                   v25,
+                                   "X-Login-Bonus-Status",
+                                   MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::ContainsKey) )
+              {
+                v26 = _4__this->http;
+                if ( !v26 )
+                  sub_26BCC3C();
+                v27 = CP::UnityWebRequestClient::get_ResponseHeaders(v26, 0);
+                if ( !v27 )
+                  sub_26BCC3C();
+                System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::get_Item(
+                  v27,
+                  "X-Login-Bonus-Status",
+                  &methoda,
+                  MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::get_Item);
+                methodPointer = (String *)methoda.methodPointer;
+                if ( !System::String::IsNullOrEmpty((String *)methoda.methodPointer, 0) )
+                {
+                  HIBYTE(methoda.parameters) = 0;
+                  if ( !TypeInfo::System::Boolean->_1.cctor_finished_or_no_cctor )
+                    sub_26BCB08(TypeInfo::System::Boolean);
+                  System::Boolean::TryParse(methodPointer, (bool *)&methoda.parameters + 7, 0);
+                  TypeInfo::Sekai::UserDataManager->static_fields->LoginBonusStatus = HIBYTE(methoda.parameters);
+                }
+              }
+LABEL_60:
+              v29 = _4__this->http;
+              if ( !v29 )
+                sub_26BCC3C();
+              ResultInfo_k__BackingField = v29->_ResultInfo_k__BackingField;
+              if ( !ResultInfo_k__BackingField )
+                sub_26BCC3C();
+              HttpStatus_k__BackingField = ResultInfo_k__BackingField->_HttpStatus_k__BackingField;
+              if ( HttpStatus_k__BackingField > 5 )
+              {
+                switch ( HttpStatus_k__BackingField )
+                {
+                  case 6:
+                    _4__this->currentState = 4;
+                    v72 = sub_26BCA70(TypeInfo::System::Object, 4);
+                    v73 = _4__this->http;
+                    if ( !v73 )
+                      sub_26BCC3C();
+                    v74 = v73->_ResultInfo_k__BackingField;
+                    if ( !v74 )
+                      sub_26BCC3C();
+                    v38 = (Object__Array *)v72;
+                    LODWORD(__dst) = v74->_StatusCode_k__BackingField;
+                    v75 = sub_26BCB10(TypeInfo::System::Int32, &__dst);
+                    if ( !v38 )
+                      sub_26BCC3C();
+                    v76 = (Object *)v75;
+                    if ( v75 )
+                    {
+                      v75 = sub_26BCB0C(v75, v38->klass->_0.element_class);
+                      if ( !v75 )
+                      {
+                        v184 = sub_26BCC64();
+                        sub_26BCAF4(v184, 0);
+                      }
+                    }
+                    if ( !v38->max_length.size )
+                      sub_26BCC48(v75);
+                    v38->vector[0] = v76;
+                    sub_26BC90C(v38->vector, v76);
+                    v205 = _4__this->method;
+                    v77 = sub_26BCB10(TypeInfo::Sekai::APICoreParam::Method, &v205);
+                    v78 = (Object *)v77;
+                    if ( v77 )
+                    {
+                      v77 = sub_26BCB0C(v77, v38->klass->_0.element_class);
+                      if ( !v77 )
+                      {
+                        v189 = sub_26BCC64();
+                        sub_26BCAF4(v189, 0);
+                      }
+                    }
+                    if ( (v38->max_length.size & 0xFFFFFFFE) == 0 )
+                      sub_26BCC48(v77);
+                    v38->vector[1] = v78;
+                    v79 = sub_26BC90C(&v38->vector[1], v78);
+                    api = (Object *)_4__this->api;
+                    if ( api )
+                    {
+                      v79 = sub_26BCB0C(_4__this->api, v38->klass->_0.element_class);
+                      if ( !v79 )
+                      {
+                        v194 = sub_26BCC64();
+                        sub_26BCAF4(v194, 0);
+                      }
+                    }
+                    if ( v38->max_length.size <= 2u )
+                      sub_26BCC48(v79);
+                    v38->vector[2] = api;
+                    sub_26BC90C(&v38->vector[2], api);
+                    v81 = _4__this->http;
+                    if ( !v81 )
+                      sub_26BCC3C();
+                    v82 = v81->_ResultInfo_k__BackingField;
+                    if ( !v82 )
+                      sub_26BCC3C();
+                    v83 = v82->_HttpStatus_k__BackingField;
+                    methoda.methodPointer = (Il2CppMethodPointer)TypeInfo::CP::HttpResult::Status;
+                    methoda.virtualMethodPointer = (Il2CppMethodPointer)-1LL;
+                    LODWORD(methoda.invoker_method) = v83;
+                    v84 = System::Enum::ToString((Enum *)&methoda, 0);
+                    v85 = (Object *)v84;
+                    if ( v84 )
+                    {
+                      v84 = (String *)sub_26BCB0C(v84, v38->klass->_0.element_class);
+                      if ( !v84 )
+                      {
+                        v199 = sub_26BCC64();
+                        sub_26BCAF4(v199, 0);
+                      }
+                    }
+                    if ( (v38->max_length.size & 0xFFFFFFFC) == 0 )
+                      sub_26BCC48(v84);
+                    v38->vector[3] = v85;
+                    sub_26BC90C(&v38->vector[3], v85);
+                    if ( !TypeInfo::CP::LogUtility->_1.cctor_finished_or_no_cctor )
+                      sub_26BCB08(TypeInfo::CP::LogUtility);
+                    goto LABEL_241;
+                  case 7:
+                    _4__this->currentState = 1;
+                    v102 = sub_26BCA70(TypeInfo::System::Object, 4);
+                    v103 = _4__this->http;
+                    if ( !v103 )
+                      sub_26BCC3C();
+                    v104 = v103->_ResultInfo_k__BackingField;
+                    if ( !v104 )
+                      sub_26BCC3C();
+                    v38 = (Object__Array *)v102;
+                    LODWORD(__dst) = v104->_StatusCode_k__BackingField;
+                    v105 = sub_26BCB10(TypeInfo::System::Int32, &__dst);
+                    if ( !v38 )
+                      sub_26BCC3C();
+                    v106 = (Object *)v105;
+                    if ( v105 )
+                    {
+                      v105 = sub_26BCB0C(v105, v38->klass->_0.element_class);
+                      if ( !v105 )
+                      {
+                        v186 = sub_26BCC64();
+                        sub_26BCAF4(v186, 0);
+                      }
+                    }
+                    if ( !v38->max_length.size )
+                      sub_26BCC48(v105);
+                    v38->vector[0] = v106;
+                    sub_26BC90C(v38->vector, v106);
+                    v205 = _4__this->method;
+                    v107 = sub_26BCB10(TypeInfo::Sekai::APICoreParam::Method, &v205);
+                    v108 = (Object *)v107;
+                    if ( v107 )
+                    {
+                      v107 = sub_26BCB0C(v107, v38->klass->_0.element_class);
+                      if ( !v107 )
+                      {
+                        v191 = sub_26BCC64();
+                        sub_26BCAF4(v191, 0);
+                      }
+                    }
+                    if ( (v38->max_length.size & 0xFFFFFFFE) == 0 )
+                      sub_26BCC48(v107);
+                    v38->vector[1] = v108;
+                    v109 = sub_26BC90C(&v38->vector[1], v108);
+                    v110 = (Object *)_4__this->api;
+                    if ( v110 )
+                    {
+                      v109 = sub_26BCB0C(_4__this->api, v38->klass->_0.element_class);
+                      if ( !v109 )
+                      {
+                        v196 = sub_26BCC64();
+                        sub_26BCAF4(v196, 0);
+                      }
+                    }
+                    if ( v38->max_length.size <= 2u )
+                      sub_26BCC48(v109);
+                    v38->vector[2] = v110;
+                    sub_26BC90C(&v38->vector[2], v110);
+                    v111 = _4__this->http;
+                    if ( !v111 )
+                      sub_26BCC3C();
+                    v112 = v111->_ResultInfo_k__BackingField;
+                    if ( !v112 )
+                      sub_26BCC3C();
+                    v113 = v112->_HttpStatus_k__BackingField;
+                    methoda.methodPointer = (Il2CppMethodPointer)TypeInfo::CP::HttpResult::Status;
+                    methoda.virtualMethodPointer = (Il2CppMethodPointer)-1LL;
+                    LODWORD(methoda.invoker_method) = v113;
+                    v114 = System::Enum::ToString((Enum *)&methoda, 0);
+                    v115 = (Object *)v114;
+                    if ( v114 )
+                    {
+                      v114 = (String *)sub_26BCB0C(v114, v38->klass->_0.element_class);
+                      if ( !v114 )
+                      {
+                        v201 = sub_26BCC64();
+                        sub_26BCAF4(v201, 0);
+                      }
+                    }
+                    if ( (v38->max_length.size & 0xFFFFFFFC) == 0 )
+                      sub_26BCC48(v114);
+                    v38->vector[3] = v115;
+                    sub_26BC90C(&v38->vector[3], v115);
+                    if ( !TypeInfo::CP::LogUtility->_1.cctor_finished_or_no_cctor )
+                      sub_26BCB08(TypeInfo::CP::LogUtility);
+                    goto LABEL_241;
+                  case 10:
+                    _4__this->currentState = 7;
+                    v35 = sub_26BCA70(TypeInfo::System::Object, 4);
+                    v36 = _4__this->http;
+                    if ( !v36 )
+                      sub_26BCC3C();
+                    v37 = v36->_ResultInfo_k__BackingField;
+                    if ( !v37 )
+                      sub_26BCC3C();
+                    v38 = (Object__Array *)v35;
+                    LODWORD(__dst) = v37->_StatusCode_k__BackingField;
+                    v39 = sub_26BCB10(TypeInfo::System::Int32, &__dst);
+                    if ( !v38 )
+                      sub_26BCC3C();
+                    v40 = (Object *)v39;
+                    if ( v39 )
+                    {
+                      v39 = sub_26BCB0C(v39, v38->klass->_0.element_class);
+                      if ( !v39 )
+                      {
+                        v183 = sub_26BCC64();
+                        sub_26BCAF4(v183, 0);
+                      }
+                    }
+                    if ( !v38->max_length.size )
+                      sub_26BCC48(v39);
+                    v38->vector[0] = v40;
+                    sub_26BC90C(v38->vector, v40);
+                    v205 = _4__this->method;
+                    v41 = sub_26BCB10(TypeInfo::Sekai::APICoreParam::Method, &v205);
+                    v42 = (Object *)v41;
+                    if ( v41 )
+                    {
+                      v41 = sub_26BCB0C(v41, v38->klass->_0.element_class);
+                      if ( !v41 )
+                      {
+                        v188 = sub_26BCC64();
+                        sub_26BCAF4(v188, 0);
+                      }
+                    }
+                    if ( (v38->max_length.size & 0xFFFFFFFE) == 0 )
+                      sub_26BCC48(v41);
+                    v38->vector[1] = v42;
+                    v43 = sub_26BC90C(&v38->vector[1], v42);
+                    v44 = (Object *)_4__this->api;
+                    if ( v44 )
+                    {
+                      v43 = sub_26BCB0C(_4__this->api, v38->klass->_0.element_class);
+                      if ( !v43 )
+                      {
+                        v193 = sub_26BCC64();
+                        sub_26BCAF4(v193, 0);
+                      }
+                    }
+                    if ( v38->max_length.size <= 2u )
+                      sub_26BCC48(v43);
+                    v38->vector[2] = v44;
+                    sub_26BC90C(&v38->vector[2], v44);
+                    v45 = _4__this->http;
+                    if ( !v45 )
+                      sub_26BCC3C();
+                    v46 = v45->_ResultInfo_k__BackingField;
+                    if ( !v46 )
+                      sub_26BCC3C();
+                    v47 = v46->_HttpStatus_k__BackingField;
+                    methoda.methodPointer = (Il2CppMethodPointer)TypeInfo::CP::HttpResult::Status;
+                    methoda.virtualMethodPointer = (Il2CppMethodPointer)-1LL;
+                    LODWORD(methoda.invoker_method) = v47;
+                    v48 = System::Enum::ToString((Enum *)&methoda, 0);
+                    v49 = (Object *)v48;
+                    if ( v48 )
+                    {
+                      v48 = (String *)sub_26BCB0C(v48, v38->klass->_0.element_class);
+                      if ( !v48 )
+                      {
+                        v198 = sub_26BCC64();
+                        sub_26BCAF4(v198, 0);
+                      }
+                    }
+                    if ( (v38->max_length.size & 0xFFFFFFFC) == 0 )
+                      sub_26BCC48(v48);
+                    v38->vector[3] = v49;
+                    sub_26BC90C(&v38->vector[3], v49);
+                    if ( !TypeInfo::CP::LogUtility->_1.cctor_finished_or_no_cctor )
+                      sub_26BCB08(TypeInfo::CP::LogUtility);
+                    goto LABEL_241;
+                }
+              }
+              else
+              {
+                switch ( HttpStatus_k__BackingField )
+                {
+                  case 2:
+                    if ( ResultInfo_k__BackingField->_StatusCode_k__BackingField == 200 )
+                    {
+                      _4__this->currentState = 8;
+                      v71 = v204;
+                      Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::ConvertResponse<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>(_4__this);
+                      sub_26BC994(
+                        _4__this,
+                        *((_QWORD *)v71->klass->rgctx_data[1].rgctxDataDummy + 16) + 320LL,
+                        (char *)&v203 - ((v5 + 15) & 0x1FFFFFFF0LL),
+                        v5);
+                      v34 = 0;
+                      _4__this->currentState = 16;
+                      goto LABEL_242;
+                    }
+                    _4__this->currentState = 11;
+                    v137 = sub_26BCA70(TypeInfo::System::Object, 4);
+                    v138 = _4__this->http;
+                    if ( !v138 )
+                      sub_26BCC3C();
+                    v139 = v138->_ResultInfo_k__BackingField;
+                    if ( !v139 )
+                      sub_26BCC3C();
+                    v38 = (Object__Array *)v137;
+                    LODWORD(__dst) = v139->_StatusCode_k__BackingField;
+                    v140 = sub_26BCB10(TypeInfo::System::Int32, &__dst);
+                    if ( !v38 )
+                      sub_26BCC3C();
+                    v141 = v140;
+                    sub_21AFB54(v38, v140);
+                    sub_21AFB8C(v38, 0, v141);
+                    v205 = _4__this->method;
+                    v142 = sub_26BCB10(TypeInfo::Sekai::APICoreParam::Method, &v205);
+                    sub_21AFB54(v38, v142);
+                    sub_21AFB8C(v38, 1, v142);
+                    v143 = _4__this->api;
+                    sub_21AFB54(v38, v143);
+                    sub_21AFB8C(v38, 2, v143);
+                    v144 = _4__this->http;
+                    if ( !v144 )
+                      sub_26BCC3C();
+                    v145 = v144->_ResultInfo_k__BackingField;
+                    if ( !v145 )
+                      sub_26BCC3C();
+                    v146 = v145->_HttpStatus_k__BackingField;
+                    methoda.methodPointer = (Il2CppMethodPointer)TypeInfo::CP::HttpResult::Status;
+                    methoda.virtualMethodPointer = (Il2CppMethodPointer)-1LL;
+                    LODWORD(methoda.invoker_method) = v146;
+                    v147 = System::Enum::ToString((Enum *)&methoda, 0);
+                    sub_21AFB54(v38, v147);
+                    sub_21AFB8C(v38, 3, v147);
+                    if ( !TypeInfo::CP::LogUtility->_1.cctor_finished_or_no_cctor )
+                      sub_26BCB08(TypeInfo::CP::LogUtility);
+LABEL_241:
+                    CP::LogUtility::LogErrorNoPrefix(
+                      LogReportType__Enum_WebRequestError,
+                      (String *)"{0} {1} {2} ({3})",
+                      v38,
+                      0);
+                    v34 = 0;
+                    goto LABEL_242;
+                  case 4:
+                    _4__this->currentState = 10;
+                    if ( ResultInfo_k__BackingField->_StatusCode_k__BackingField != 403
+                      || !CP::UnityWebRequestClient::get_ResponseBytes(v29, 0) )
+                    {
+                      goto LABEL_192;
+                    }
+                    v100 = _4__this->http;
+                    if ( !v100 )
+                      sub_26BCC3C();
+                    ResponseBytes = CP::UnityWebRequestClient::get_ResponseBytes(v100, 0);
+                    if ( !ResponseBytes )
+                      sub_26BCC3C();
+                    if ( ResponseBytes->max_length.value )
+                    {
+                      Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::ConvertResponse<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>(_4__this);
+                      v34 = (ClientErrorResponse *)methoda.methodPointer;
+                    }
+                    else
+                    {
+LABEL_192:
+                      v34 = 0;
+                    }
+                    v116 = sub_26BCA70(TypeInfo::System::Object, 4);
+                    v117 = _4__this->http;
+                    if ( !v117 )
+                      sub_26BCC3C();
+                    v118 = v117->_ResultInfo_k__BackingField;
+                    if ( !v118 )
+                      sub_26BCC3C();
+                    v119 = (Object__Array *)v116;
+                    LODWORD(__dst) = v118->_StatusCode_k__BackingField;
+                    v120 = sub_26BCB10(TypeInfo::System::Int32, &__dst);
+                    if ( !v119 )
+                      sub_26BCC3C();
+                    v121 = (Object *)v120;
+                    if ( v120 )
+                    {
+                      v120 = sub_26BCB0C(v120, v119->klass->_0.element_class);
+                      if ( !v120 )
+                      {
+                        v187 = sub_26BCC64();
+                        sub_26BCAF4(v187, 0);
+                      }
+                    }
+                    if ( !v119->max_length.size )
+                      sub_26BCC48(v120);
+                    v119->vector[0] = v121;
+                    sub_26BC90C(v119->vector, v121);
+                    v205 = _4__this->method;
+                    v122 = sub_26BCB10(TypeInfo::Sekai::APICoreParam::Method, &v205);
+                    v123 = (Object *)v122;
+                    if ( v122 )
+                    {
+                      v122 = sub_26BCB0C(v122, v119->klass->_0.element_class);
+                      if ( !v122 )
+                      {
+                        v192 = sub_26BCC64();
+                        sub_26BCAF4(v192, 0);
+                      }
+                    }
+                    if ( (v119->max_length.size & 0xFFFFFFFE) == 0 )
+                      sub_26BCC48(v122);
+                    v119->vector[1] = v123;
+                    v124 = sub_26BC90C(&v119->vector[1], v123);
+                    v125 = (Object *)_4__this->api;
+                    if ( v125 )
+                    {
+                      v124 = sub_26BCB0C(_4__this->api, v119->klass->_0.element_class);
+                      if ( !v124 )
+                      {
+                        v197 = sub_26BCC64();
+                        sub_26BCAF4(v197, 0);
+                      }
+                    }
+                    if ( v119->max_length.size <= 2u )
+                      sub_26BCC48(v124);
+                    v119->vector[2] = v125;
+                    sub_26BC90C(&v119->vector[2], v125);
+                    v126 = _4__this->http;
+                    if ( !v126 )
+                      sub_26BCC3C();
+                    v127 = v126->_ResultInfo_k__BackingField;
+                    if ( !v127 )
+                      sub_26BCC3C();
+                    v128 = v127->_HttpStatus_k__BackingField;
+                    methoda.methodPointer = (Il2CppMethodPointer)TypeInfo::CP::HttpResult::Status;
+                    methoda.virtualMethodPointer = (Il2CppMethodPointer)-1LL;
+                    LODWORD(methoda.invoker_method) = v128;
+                    v129 = System::Enum::ToString((Enum *)&methoda, 0);
+                    v130 = (Object *)v129;
+                    if ( v129 )
+                    {
+                      v129 = (String *)sub_26BCB0C(v129, v119->klass->_0.element_class);
+                      if ( !v129 )
+                      {
+                        v202 = sub_26BCC64();
+                        sub_26BCAF4(v202, 0);
+                      }
+                    }
+                    if ( (v119->max_length.size & 0xFFFFFFFC) == 0 )
+                      sub_26BCC48(v129);
+                    v119->vector[3] = v130;
+                    sub_26BC90C(&v119->vector[3], v130);
+                    if ( !TypeInfo::CP::LogUtility->_1.cctor_finished_or_no_cctor )
+                      sub_26BCB08(TypeInfo::CP::LogUtility);
+                    CP::LogUtility::LogErrorNoPrefix(
+                      LogReportType__Enum_WebRequestError,
+                      (String *)"[Response]{0} {1} {2} ({3})",
+                      v119,
+                      0);
+                    v131 = _4__this->http;
+                    if ( !v131 )
+                      sub_26BCC3C();
+                    if ( CP::UnityWebRequestClient::get_ResponseBytes(v131, 0) )
+                    {
+                      v132 = _4__this->http;
+                      if ( !v132 )
+                        sub_26BCC3C();
+                      v133 = CP::UnityWebRequestClient::get_ResponseBytes(v132, 0);
+                      if ( !v133 )
+                        sub_26BCC3C();
+                      if ( v133->max_length.value )
+                      {
+                        Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::ConvertResponse<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>(_4__this);
+                        v34 = (ClientErrorResponse *)methoda.methodPointer;
+                        _4__this->convertedErrorResponse = (ClientErrorResponse *)methoda.methodPointer;
+                        sub_26BC90C(&_4__this->convertedErrorResponse, v34);
+                      }
+                    }
+                    if ( v34 )
+                    {
+                      v134 = _4__this->http;
+                      if ( !v134 )
+                        sub_26BCC3C();
+                      v135 = v134->_ResultInfo_k__BackingField;
+                      if ( !v135 )
+                        sub_26BCC3C();
+                      StatusCode_k__BackingField = v135->_StatusCode_k__BackingField;
+                      if ( StatusCode_k__BackingField <= 405 )
+                      {
+                        if ( StatusCode_k__BackingField == 400 )
+                        {
+                          if ( System::String::op_Equality(v34->_ErrorCode_k__BackingField, (String *)"cheat", 0) )
+                            _4__this->currentState = 21;
+                        }
+                        else if ( StatusCode_k__BackingField == 403 )
+                        {
+                          ErrorCode_k__BackingField = v34->_ErrorCode_k__BackingField;
+                          if ( System::String::op_Equality(ErrorCode_k__BackingField, (String *)"cs_ban", 0) )
+                          {
+                            _4__this->currentState = 22;
+                          }
+                          else if ( System::String::op_Equality(ErrorCode_k__BackingField, (String *)"login_ban", 0) )
+                          {
+                            _4__this->currentState = 23;
+                          }
+                          else if ( System::String::op_Equality(ErrorCode_k__BackingField, (String *)"cs_inspecting", 0) )
+                          {
+                            _4__this->currentState = 24;
+                          }
+                          else if ( System::String::op_Equality(ErrorCode_k__BackingField, (String *)"session_error", 0) )
+                          {
+                            _4__this->currentState = 25;
+                            Instance = CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::UserAccountManager>::get_Instance);
+                            if ( !Instance )
+                              sub_26BCC3C();
+                            if ( Sekai::UserAccountManager::get_IsLogin((UserAccountManager *)Instance, 0) )
+                            {
+                              v180 = CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::APIManager>::get_Instance);
+                              if ( !v180 )
+                                sub_26BCC3C();
+                              static_fields = TypeInfo::System::String->static_fields;
+                              Empty = static_fields->Empty;
+                              v180[3].monitor = (MonitorData *)static_fields->Empty;
+                              sub_26BC90C(&v180[3].monitor, Empty);
+                            }
+                          }
+                        }
+                      }
+                      else
+                      {
+                        switch ( StatusCode_k__BackingField )
+                        {
+                          case 406:
+                            _4__this->currentState = 29;
+                            break;
+                          case 409:
+                            v178 = v34->_ErrorCode_k__BackingField;
+                            if ( System::String::op_Equality(v178, (String *)"out_of_period_2022_april_fool", 0) )
+                            {
+                              _4__this->currentState = 28;
+                            }
+                            else if ( System::String::op_Equality(v178, (String *)"user_block_count_limit", 0) )
+                            {
+                              _4__this->currentState = 30;
+                            }
+                            break;
+                          case 426:
+                            *(_QWORD *)&_4__this->currentState = 0x100000014LL;
+                            break;
+                        }
+                      }
+                    }
+                    goto LABEL_242;
+                  case 5:
+                    if ( ResultInfo_k__BackingField->_StatusCode_k__BackingField == 503 )
+                    {
+                      if ( !CP::UnityWebRequestClient::get_ResponseBytes(_4__this->http, 0) )
+                        goto LABEL_259;
+                      v32 = _4__this->http;
+                      if ( !v32 )
+                        sub_26BCC3C();
+                      v33 = CP::UnityWebRequestClient::get_ResponseBytes(v32, 0);
+                      if ( !v33 )
+                        sub_26BCC3C();
+                      if ( v33->max_length.value
+                        && (Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::ConvertResponse<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>(_4__this),
+                            v34 = (ClientErrorResponse *)methoda.methodPointer,
+                            _4__this->convertedErrorResponse = (ClientErrorResponse *)methoda.methodPointer,
+                            sub_26BC90C(&_4__this->convertedErrorResponse, v34),
+                            v34) )
+                      {
+                        if ( System::String::op_Equality(
+                               v34->_ErrorCode_k__BackingField,
+                               (String *)"under_module_maintenance",
+                               0) )
+                        {
+                          _4__this->currentState = 13;
+LABEL_242:
+                          klass = v204->klass;
+                          v204 = (MethodInfo *)((char *)v204 + 32);
+                          Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::PrepareReponse(
+                            _4__this,
+                            (MethodInfo *)klass->rgctx_data[12].rgctxDataDummy);
+                          Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::CallBackReponse(
+                            _4__this,
+                            v34,
+                            *(MethodInfo **)(*((_QWORD *)v204->methodPointer + 24) + 56LL));
+                          Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Completed(
+                            _4__this,
+                            *(MethodInfo **)(*((_QWORD *)v204(468E128帶我來這)->methodPointer + 24) + 64LL));
+                          return 0;
+                        }
+                      }
+                      else
+                      {
+LABEL_259:
+                        v34 = 0;
+                      }
+                      _4__this->currentState = 12;
+                      goto LABEL_242;
+                    }
+                    _4__this->currentState = 11;
+                    v148 = sub_26BCA70(TypeInfo::System::Object, 4);
+                    v149 = _4__this->http;
+                    if ( !v149 )
+                      sub_26BCC3C();
+                    v150 = v149->_ResultInfo_k__BackingField;
+                    if ( !v150 )
+                      sub_26BCC3C();
+                    v38 = (Object__Array *)v148;
+                    LODWORD(__dst) = v150->_StatusCode_k__BackingField;
+                    v151 = sub_26BCB10(TypeInfo::System::Int32, &__dst);
+                    if ( !v38 )
+                      sub_26BCC3C();
+                    v152 = v151;
+                    sub_21AFB54(v38, v151);
+                    sub_21AFB8C(v38, 0, v152);
+                    v205 = _4__this->method;
+                    v153 = sub_26BCB10(TypeInfo::Sekai::APICoreParam::Method, &v205);
+                    sub_21AFB54(v38, v153);
+                    sub_21AFB8C(v38, 1, v153);
+                    v154 = _4__this->api;
+                    sub_21AFB54(v38, v154);
+                    sub_21AFB8C(v38, 2, v154);
+                    v155 = _4__this->http;
+                    if ( !v155 )
+                      sub_26BCC3C();
+                    v156 = v155->_ResultInfo_k__BackingField;
+                    if ( !v156 )
+                      sub_26BCC3C();
+                    v157 = v156->_HttpStatus_k__BackingField;
+                    methoda.methodPointer = (Il2CppMethodPointer)TypeInfo::CP::HttpResult::Status;
+                    methoda.virtualMethodPointer = (Il2CppMethodPointer)-1LL;
+                    LODWORD(methoda.invoker_method) = v157;
+                    v158 = System::Enum::ToString((Enum *)&methoda, 0);
+                    sub_21AFB54(v38, v158);
+                    sub_21AFB8C(v38, 3, v158);
+                    if ( !TypeInfo::CP::LogUtility->_1.cctor_finished_or_no_cctor )
+                      sub_26BCB08(TypeInfo::CP::LogUtility);
+                    goto LABEL_241;
+                }
+              }
+              _4__this->currentState = 15;
+              v86 = sub_26BCA70(TypeInfo::System::Object, 4);
+              v87 = _4__this->http;
+              if ( !v87 )
+                sub_26BCC3C();
+              v88 = v87->_ResultInfo_k__BackingField;
+              if ( !v88 )
+                sub_26BCC3C();
+              v38 = (Object__Array *)v86;
+              LODWORD(__dst) = v88->_StatusCode_k__BackingField;
+              v89 = sub_26BCB10(TypeInfo::System::Int32, &__dst);
+              if ( !v38 )
+                sub_26BCC3C();
+              v90 = (Object *)v89;
+              if ( v89 )
+              {
+                v89 = sub_26BCB0C(v89, v38->klass->_0.element_class);
+                if ( !v89 )
+                {
+                  v185 = sub_26BCC64();
+                  sub_26BCAF4(v185, 0);
+                }
+              }
+              if ( !v38->max_length.size )
+                sub_26BCC48(v89);
+              v38->vector[0] = v90;
+              sub_26BC90C(v38->vector, v90);
+              v205 = _4__this->method;
+              v91 = sub_26BCB10(TypeInfo::Sekai::APICoreParam::Method, &v205);
+              v92 = (Object *)v91;
+              if ( v91 )
+              {
+                v91 = sub_26BCB0C(v91, v38->klass->_0.element_class);
+                if ( !v91 )
+                {
+                  v190 = sub_26BCC64();
+                  sub_26BCAF4(v190, 0);
+                }
+              }
+              if ( (v38->max_length.size & 0xFFFFFFFE) == 0 )
+                sub_26BCC48(v91);
+              v38->vector[1] = v92;
+              v93 = sub_26BC90C(&v38->vector[1], v92);
+              v94 = (Object *)_4__this->api;
+              if ( v94 )
+              {
+                v93 = sub_26BCB0C(_4__this->api, v38->klass->_0.element_class);
+                if ( !v93 )
+                {
+                  v195 = sub_26BCC64();
+                  sub_26BCAF4(v195, 0);
+                }
+              }
+              if ( v38->max_length.size <= 2u )
+                sub_26BCC48(v93);
+              v38->vector[2] = v94;
+              sub_26BC90C(&v38->vector[2], v94);
+              v95 = _4__this->http;
+              if ( !v95 )
+                sub_26BCC3C();
+              v96 = v95->_ResultInfo_k__BackingField;
+              if ( !v96 )
+                sub_26BCC3C();
+              v97 = v96->_HttpStatus_k__BackingField;
+              methoda.methodPointer = (Il2CppMethodPointer)TypeInfo::CP::HttpResult::Status;
+              methoda.virtualMethodPointer = (Il2CppMethodPointer)-1LL;
+              LODWORD(methoda.invoker_method) = v97;
+              v98 = System::Enum::ToString((Enum *)&methoda, 0);
+              v99 = (Object *)v98;
+              if ( v98 )
+              {
+                v98 = (String *)sub_26BCB0C(v98, v38->klass->_0.element_class);
+                if ( !v98 )
+                {
+                  v200 = sub_26BCC64();
+                  sub_26BCAF4(v200, 0);
+                }
+              }
+              if ( (v38->max_length.size & 0xFFFFFFFC) == 0 )
+                sub_26BCC48(v98);
+              v38->vector[3] = v99;
+              sub_26BC90C(&v38->vector[3], v99);
+              if ( !TypeInfo::CP::LogUtility->_1.cctor_finished_or_no_cctor )
+                sub_26BCB08(TypeInfo::CP::LogUtility);
+              goto LABEL_241;
+            }
+            v20 = _4__this->http;
+            if ( v20 )
+            {
+              v21 = CP::UnityWebRequestClient::get_ResponseHeaders(v20, 0);
+              if ( v21 )
+              {
+                System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::get_Item(
+                  v21,
+                  "X-Session-Token",
+                  &methoda,
+                  MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::get_Item);
+                v22 = methoda.methodPointer;
+                if ( !System::String::IsNullOrEmpty((String *)methoda.methodPointer, 0) )
+                {
+                  v23 = CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::APIManager>::get_Instance);
+                  if ( !v23 )
+                    sub_26BCC3C();
+                  v23[3].monitor = (MonitorData *)v22;
+                  sub_26BC90C(&v23[3].monitor, v22);
+                }
+                goto LABEL_51;
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_26BCC3C();
+  }
+  if ( _1__state )
+    return 0;
+  this->__1__state = -1;
+  v8 = *(_QWORD *)sub_26BC990(_4__this, *((_QWORD *)rgctx_data[1].rgctxDataDummy + 16) + 480LL);
+  if ( v8 )
+    (*(void (__fastcall **)(_QWORD, APICore_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *, _QWORD))(v8 + 24))(
+      *(_QWORD *)(v8 + 64),
+      _4__this,
+      *(_QWORD *)(v8 + 40));
+  v9 = (Dictionary_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)sub_26BCC28(TypeInfo::System::Collections::Generic::Dictionary<System::String,System::String>);
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Dictionary(
+    v9,
+    MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::Dictionary);
+  v203 = (char *)&v203 - ((v4 + 15) & 0x1FFFFFFF0LL);
+  if ( !v9 )
+    sub_26BCC3C();
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "Content-Type");
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "Accept");
+  v10 = CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::APIManager>::get_Instance);
+  if ( !v10 )
+    sub_26BCC3C();
+  if ( !System::String::IsNullOrEmpty((String *)v10[3].monitor, 0) )
+  {
+    if ( !CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::APIManager>::get_Instance) )
+      sub_26BCC3C();
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-Session-Token");
+  }
+  if ( !CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::UserAccountManager>::get_Instance) )
+    sub_26BCC3C();
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "X-Install-Id");
+  if ( !TypeInfo::Sekai::EnvironmentConfig->_1.cctor_finished_or_no_cctor )
+    sub_26BCB08(TypeInfo::Sekai::EnvironmentConfig);
+  Sekai::EnvironmentConfig::get_ClientVersionAPI(0);
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "X-App-Version");
+  Sekai::EnvironmentConfig::get_ClientAppHash(0);
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "X-App-Hash");
+  VersionData = Sekai::EnvironmentConfig::get_VersionData(0);
+  if ( !VersionData )
+    sub_26BCC3C();
+  if ( !System::String::IsNullOrEmpty(VersionData->_DataVersion_k__BackingField, 0) )
+  {
+    if ( !TypeInfo::Sekai::EnvironmentConfig->_1.cctor_finished_or_no_cctor )
+      sub_26BCB08(TypeInfo::Sekai::EnvironmentConfig);
+    if ( !Sekai::EnvironmentConfig::get_VersionData(0) )
+      sub_26BCC3C();
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-Data-Version");
+  }
+  if ( !TypeInfo::Sekai::EnvironmentConfig->_1.cctor_finished_or_no_cctor )
+    sub_26BCB08(TypeInfo::Sekai::EnvironmentConfig);
+  v12 = Sekai::EnvironmentConfig::get_VersionData(0);
+  if ( !v12 )
+    sub_26BCC3C();
+  if ( !System::String::IsNullOrEmpty(v12->_AssetVersion_k__BackingField, 0) )
+  {
+    if ( !TypeInfo::Sekai::EnvironmentConfig->_1.cctor_finished_or_no_cctor )
+      sub_26BCB08(TypeInfo::Sekai::EnvironmentConfig);
+    if ( !Sekai::EnvironmentConfig::get_VersionData(0) )
+      sub_26BCC3C();
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-Asset-Version");
+  }
+  v207 = System::Guid::NewGuid(0);
+  System::Guid::ToString(&v207, 0);
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "X-Request-Id");
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "X-Platform");
+  deviceModel = UnityEngine::SystemInfo::get_deviceModel(0);
+  if ( !System::String::IsNullOrEmpty(deviceModel, 0) )
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-DeviceModel");
+  operatingSystem = UnityEngine::SystemInfo::get_operatingSystem(0);
+  if ( !System::String::IsNullOrEmpty(operatingSystem, 0) )
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-OperatingSystem");
+  if ( !CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::UserAccountManager>::get_Instance) )
+    sub_26BCC3C();
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "X-IF");
+  if ( !CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::UserAccountManager>::get_Instance) )
+    sub_26BCC3C();
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "X-KC");
+  if ( !CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::UserAccountManager>::get_Instance) )
+    sub_26BCC3C();
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "X-MA");
+  if ( CP::SingletonMonoBehaviour<System::Object>::get_ExistsInstance(MethodInfo::CP::SingletonMonoBehaviour<AdjustManager>::get_ExistsInstance) )
+  {
+    v15 = CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<AdjustManager>::get_Instance);
+    if ( !v15 )
+      sub_26BCC3C();
+    AdjustManager::get_AdjustId((AdjustManager *)v15, 0);
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-AI");
+    v16 = CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<AdjustManager>::get_Instance);
+    if ( !v16 )
+      sub_26BCC3C();
+    AdjustManager::get_GoogleAdId((AdjustManager *)v16, 0);
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-GA");
+  }
+  else
+  {
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-AI");
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-GA");
+  }
+  if ( !_4__this )
+    sub_26BCC3C();
+  UserExecuteLocationHeaderParam = Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::GetUserExecuteLocationHeaderParam(
+                                     _4__this,
+                                     (MethodInfo *)v204->klass->rgctx_data[4].rgctxDataDummy);
+  if ( !Sekai::Extensions::CollectionExtensions::IsNullOrEmpty<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>(
+          (IEnumerable_1_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)UserExecuteLocationHeaderParam,
+          MethodInfo::Sekai::Extensions::CollectionExtensions::IsNullOrEmpty<wchar_t>) )
+    System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+      v9,
+      "X-User-Execute-Location");
+  if ( !CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::UserAccountManager>::get_Instance) )
+    sub_26BCC3C();
+  System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+    v9,
+    "Cookie");
+  OptionalRequestHeader_k__BackingField = (Dictionary_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)_4__this->_OptionalRequestHeader_k__BackingField;
+  if ( OptionalRequestHeader_k__BackingField )
+  {
+    Keys = System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::get_Keys(
+             OptionalRequestHeader_k__BackingField,
+             MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::get_Keys);
+    if ( !Keys )
+      sub_26BCC3C();
+    System::Collections::Generic::Dictionary_2_TKey_TValue_::KeyCollection<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::GetEnumerator(
+      Keys,
+      &methoda);
+    *(_OWORD *)&methoda.rgctx_data = *(_OWORD *)&methoda.methodPointer;
+    *(_QWORD *)&methoda.token = methoda.invoker_method;
+    methoda.methodPointer = 0;
+    methoda.virtualMethodPointer = (Il2CppMethodPointer)&methoda.rgctx_data;
+    while ( System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::MoveNext(
+              (Dictionary_2_TKey_TValue_KeyCollection_TKey_TValue_Enumerator_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)&methoda.rgctx_data,
+              MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<System::String,System::String>::MoveNext) )
+    {
+      v53 = MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<System::String,System::String>::get_Current;
+      v54 = MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<System::String,System::String>::get_Current->klass;
+      if ( (*(_WORD *)((char *)v54 + 309) & 1) != 0 )
+      {
+        v56 = *((unsigned int *)v54->rgctx_data[2].rgctxDataDummy + 63);
+      }
+      else
+      {
+        v55 = sub_26ED958();
+        v54 = v53->klass;
+        v56 = *(unsigned int *)(*(_QWORD *)(*(_QWORD *)(v55 + 192) + 16LL) + 252LL);
+        if ( (*(_WORD *)((char *)v54 + 309) & 1) == 0 )
+          v54 = (Il2CppClass *)sub_26ED958();
+      }
+      v57 = (const void *)sub_26BC990(&methoda.rgctx_data, *((_QWORD *)v54->rgctx_data[1].rgctxDataDummy + 16) + 96LL);
+      memcpy(&__dst, v57, v56);
+      v58 = _4__this->_OptionalRequestHeader_k__BackingField;
+      if ( !v58 )
+        sub_26BCC3C();
+      v59 = __dst;
+      System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::get_Item(
+        v58,
+        __dst,
+        &__dst,
+        MethodInfo::System::Collections::Generic::Dictionary<System::String,System::String>::get_Item);
+      System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+        v9,
+        v59);
+    }
+    System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Dispose(
+      (Dictionary_2_TKey_TValue_KeyCollection_TKey_TValue_Enumerator_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)&methoda.rgctx_data,
+      MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<System::String,System::String>::Dispose);
+  }
+  v60 = _4__this->method;
+  if ( v60 )
+  {
+    if ( v60 == 4 )
+    {
+      v61 = _4__this->http;
+      if ( !v61 )
+        sub_26BCC3C();
+      CP::UnityWebRequestClient::Delete(v61, _4__this->api, 0, (Dictionary_2_System_String_System_String_ *)v9, 0);
+    }
+    else
+    {
+      v63 = (Byte__Array *)sub_26BCA70(TypeInfo::System::Byte, 0);
+      v64 = v204;
+      v65 = (const void *)sub_26BC990(_4__this, *((_QWORD *)v204->klass->rgctx_data[1].rgctxDataDummy + 16) + 288LL);
+      memcpy((char *)&v203 - ((v4 + 15) & 0x1FFFFFFF0LL), v65, v4);
+      if ( (((__int64 (__fastcall *)(_QWORD, _QWORD))sub_26BCBEC)(
+              (const Il2CppRGCTXData)v64->klass->rgctx_data[5].rgctxDataDummy,
+              (char *)&v203 - ((v4 + 15) & 0x1FFFFFFF0LL))
+          & 1) != 0 )
+      {
+        v66 = v204;
+        v67 = (const void *)sub_26BC990(_4__this, *((_QWORD *)v204->klass->rgctx_data[1].rgctxDataDummy + 16) + 288LL);
+        memcpy((char *)&v203 - ((v4 + 15) & 0x1FFFFFFF0LL), v67, v4);
+        v68 = v66->klass;
+        v69 = v68->rgctx_data;
+        if ( (*((_DWORD *)v69[5].rgctxDataDummy + 10) & 0x80000000) != 0 )
+        {
+          v160 = v203;
+          memmove(v203, v67, v4);
+          v69 = v68->rgctx_data;
+          v70 = v160;
+        }
+        else
+        {
+          v70 = *(char **)((char *)&v203 - ((v4 + 15) & 0x1FFFFFFF0LL));
+        }
+        v63 = (Byte__Array *)((__int64 (__fastcall *)(_QWORD, _QWORD))CP::BinarySerializer::Serialize<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>)(
+                               v70,
+                               (const Il2CppRGCTXData)v69[6].rgctxDataDummy);
+      }
+      v161 = CP::SingletonMonoBehaviour<System::Object>::get_Instance(MethodInfo::CP::SingletonMonoBehaviour<Sekai::APIManager>::get_Instance);
+      if ( !v161 )
+        sub_26BCC3C();
+      v162 = (FastAESCrypt *)v161[3].klass;
+      if ( !v162 )
+        sub_26BCC3C();
+      v163 = CP::FastAESCrypt::Encrypt(v162, v63, 0, 0);
+      v164 = _4__this->http;
+      v165 = _4__this->api;
+      methoda.methodPointer = (Il2CppMethodPointer)TypeInfo::Sekai::APICoreParam::Method;
+      methoda.virtualMethodPointer = (Il2CppMethodPointer)-1LL;
+      LODWORD(methoda.invoker_method) = _4__this->method;
+      v166 = System::Enum::ToString((Enum *)&methoda, 0);
+      v167 = (UploadHandlerRaw *)sub_26BCC28(TypeInfo::UnityEngine::Networking::UploadHandlerRaw);
+      UnityEngine::Networking::UploadHandlerRaw::UploadHandlerRaw(v167, v163, 0);
+      if ( !v164 )
+        sub_26BCC3C();
+      CP::UnityWebRequestClient::SetUpRequest(
+        v164,
+        v165,
+        v166,
+        (UploadHandler *)v167,
+        (Dictionary_2_System_String_System_String_ *)v9,
+        0);
+    }
+  }
+  else
+  {
+    v62 = _4__this->http;
+    if ( !v62 )
+      sub_26BCC3C();
+    CP::UnityWebRequestClient::Get(v62, _4__this->api, (Dictionary_2_System_String_System_String_ *)v9, 0);
+  }
+  if ( !TypeInfo::UnityEngine::Application->_1.cctor_finished_or_no_cctor )
+    sub_26BCB08(TypeInfo::UnityEngine::Application);
+  if ( UnityEngine::Application::get_internetReachability(0) == NetworkReachability__Enum_NotReachable )
+  {
+    _4__this->currentState = 26;
+    v176 = v204;
+    Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::CallBackReponse(
+      _4__this,
+      0,
+      (MethodInfo *)v204->klass->rgctx_data[7].rgctxDataDummy);
+    Sekai::APICore<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Completed(
+      _4__this,
+      (MethodInfo *)v176->klass->rgctx_data[8].rgctxDataDummy);
+    return 0;
+  }
+  v168 = _4__this->http;
+  v169 = (CertificateHandler **)sub_26BC990(
+                                  _4__this,
+                                  *((_QWORD *)v204->klass->rgctx_data[1].rgctxDataDummy + 16) + 352LL);
+  if ( !v168 )
+    sub_26BCC3C();
+  CP::UnityWebRequestClient::SetCertificateHandler(v168, *v169, 0);
+  v170 = _4__this->http;
+  if ( !v170 )
+    sub_26BCC3C();
+  CP::UnityWebRequestClient::SendRequest(v170, 0);
+  _4__this->currentState = 5;
+  UnityEngine::Time::get_realtimeSinceStartup(0);
+  v171 = _4__this->http;
+  if ( !v171 )
+    sub_26BCC3C();
+  parentObj = this->parentObj;
+  v173 = CP::UnityWebRequestClient::WaitForResponse(v171, 0, 0);
+  if ( !parentObj )
+    sub_26BCC3C();
+  started = (Object *)UnityEngine::MonoBehaviour::StartCoroutine(parentObj, v173, 0);
+  this->__2__current = started;
+  sub_26BC90C(&this->__2__current, started);
+  result = 1;
+  this->__1__state = 1;
+  return result;
+}
