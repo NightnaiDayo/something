@@ -17,7 +17,7 @@ __int64 __fastcall sub_223DB00(__int64 result, __int64 a2)
                  *(_QWORD *)(v6 + 64),
                  a2,
                  *(_QWORD *)(v6 + 40));
-      (468E128)--v3;
+      (223DB3C)--v3;
     }
     while ( v3 );
   }
