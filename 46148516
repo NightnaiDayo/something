@@ -1,0 +1,302 @@
+// Void Unpack(DynamicPropertyPayload)
+void __fastcall CP::Realtime::SyncProperty::Unpack(
+        SyncProperty *this,
+        DynamicPropertyPayload payload,
+        MethodInfo *method)
+{
+  Dictionary_2_System_Int32_System_Byte_ *values; // x19
+  HashSet_1_System_String_ *chageProp; // x0
+  Dictionary_2_TKey_TValue_KeyCollection_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *Keys; // x0
+  struct MethodInfo *v7; // x21
+  Il2CppClass *klass; // x0
+  __int64 v9; // x8
+  size_t v10; // x21
+  const void *v11; // x0
+  Dictionary_2_System_Int32_System_String_ *idToKeyMap; // x0
+  uint32_t token; // w21
+  HashSet_1_System_String_ *v14; // x0
+  HashSet_1_System_String_ *v15; // x0
+  Hashtable *data; // x0
+  __int64 v17; // x0
+  Hashtable *v18; // x0
+  Byte__Array *name; // x21
+  int v20; // w24
+  __int64 v21; // x0
+  __int64 v22; // x23
+  Hashtable *v23; // x22
+  Il2CppClass *v24; // x21
+  Byte__Array *v25; // x23
+  Byte__Array *v26; // x0
+  Hashtable *v27; // x0
+  Hashtable *v28; // x0
+  Byte__Array *v29; // x23
+  Encoding *UTF8; // x0
+  Byte__Array *v31; // x23
+  Byte__Array *v32; // x23
+  MethodInfo methoda; // [xsp+8h] [xbp-A8h] BYREF
+
+  values = payload.values;
+  if ( (byte_796F014 & 1) == 0 )
+  {
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    byte_796F014 = 1;
+  }
+  memset(&methoda.name, 0, 40);
+  chageProp = this->chageProp;
+  if ( !chageProp )
+    sub_26BCC3C();
+  System::Collections::Generic::HashSet<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Clear(
+    (HashSet_1_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)chageProp,
+    MethodInfo::System::Collections::Generic::HashSet<System::String>::Clear);
+  if ( !values )
+    sub_26BCC3C();
+  Keys = System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::get_Keys(
+           (Dictionary_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)values,
+           MethodInfo::System::Collections::Generic::Dictionary<int,System::Byte []>::get_Keys);
+  if ( !Keys )
+    sub_26BCC3C();
+  System::Collections::Generic::Dictionary_2_TKey_TValue_::KeyCollection<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::GetEnumerator(
+    Keys,
+    &methoda);
+  *(_OWORD *)&methoda.return_type = *(_OWORD *)&methoda.methodPointer;
+  methoda.rgctx_data = (const Il2CppRGCTXData *)methoda.invoker_method;
+  methoda.methodPointer = 0;
+  methoda.virtualMethodPointer = (Il2CppMethodPointer)&methoda.return_type;
+  while ( System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::MoveNext(
+            (Dictionary_2_TKey_TValue_KeyCollection_TKey_TValue_Enumerator_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)&methoda.return_type,
+            MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<int,System::Byte []>::MoveNext) )
+  {
+    v7 = MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<int,System::Byte []>::get_Current;
+    klass = MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<int,System::Byte []>::get_Current->klass;
+    if ( (*(_WORD *)((char *)klass + 309) & 1) != 0 )
+    {
+      v10 = *((unsigned int *)klass->rgctx_data[2].rgctxDataDummy + 63);
+    }
+    else
+    {
+      v9 = sub_26ED958(klass);
+      klass = v7->klass;
+      v10 = *(unsigned int *)(*(_QWORD *)(*(_QWORD *)(v9 + 192) + 16LL) + 252LL);
+      if ( (*(_WORD *)((char *)klass + 309) & 1) == 0 )
+        klass = (Il2CppClass *)sub_26ED958(klass);
+    }
+    v11 = (const void *)sub_26BC990(&methoda.return_type, *((_QWORD *)klass->rgctx_data[1].rgctxDataDummy + 16) + 96LL);
+    memcpy(&methoda.token, v11, v10);
+    idToKeyMap = this->idToKeyMap;
+    if ( !idToKeyMap )
+      sub_26BCC3C();
+    token = methoda.token;
+    if ( (System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::TryGetValue(
+            idToKeyMap,
+            &methoda.token,
+            &methoda.klass,
+            MethodInfo::System::Collections::Generic::Dictionary<int,System::String>::TryGetValue)
+        & 1) != 0 )
+    {
+      methoda.token = token;
+      if ( (System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::ContainsKey(
+              values,
+              &methoda.token,
+              MethodInfo::System::Collections::Generic::Dictionary<int,System::Byte []>::ContainsKey)
+          & 1) == 0 )
+        goto LABEL_39;
+      *((_DWORD *)&methoda + 21) = token;
+      System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::get_Item(
+        values,
+        (char *)&methoda + 84,
+        &methoda.token,
+        MethodInfo::System::Collections::Generic::Dictionary<int,System::Byte []>::get_Item);
+      if ( !*(_QWORD *)&methoda.token )
+        goto LABEL_39;
+      *((_DWORD *)&methoda + 21) = token;
+      System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::get_Item(
+        values,
+        (char *)&methoda + 84,
+        &methoda.token,
+        MethodInfo::System::Collections::Generic::Dictionary<int,System::Byte []>::get_Item);
+      if ( !*(_QWORD *)&methoda.token )
+        sub_26BCC3C();
+      if ( *(_QWORD *)(*(_QWORD *)&methoda.token + 24LL) )
+      {
+        methoda.token = token;
+        System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::TryGetValue(
+          values,
+          &methoda.token,
+          &methoda.name,
+          MethodInfo::System::Collections::Generic::Dictionary<int,System::Byte []>::TryGetValue);
+        v14 = this->chageProp;
+        if ( !v14 )
+          sub_26BCC3C();
+        if ( (System::Collections::Generic::HashSet<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Contains(
+                v14,
+                methoda.klass,
+                MethodInfo::System::Collections::Generic::HashSet<System::String>::Contains)
+            & 1) == 0 )
+        {
+          v15 = this->chageProp;
+          if ( !v15 )
+            sub_26BCC3C();
+          System::Collections::Generic::HashSet<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Add(
+            v15,
+            methoda.klass,
+            MethodInfo::System::Collections::Generic::HashSet<System::String>::Add);
+        }
+        data = this->data;
+        if ( !data )
+          sub_26BCC3C();
+        v17 = ((__int64 (__fastcall *)(Hashtable *, Il2CppClass *, const MethodInfo *))data->klass->vtable.ContainsKey.methodPtr)(
+                data,
+                methoda.klass,
+                data->klass->vtable.ContainsKey.method);
+        if ( (v17 & 1) == 0 )
+        {
+          v18 = this->data;
+          if ( !v18 )
+            sub_26BCC3C();
+          v17 = ((__int64 (__fastcall *)(Hashtable *, Il2CppClass *, _QWORD, const MethodInfo *))v18->klass->vtable.Add_1.methodPtr)(
+                  v18,
+                  methoda.klass,
+                  0,
+                  v18->klass->vtable.Add_1.method);
+        }
+        name = (Byte__Array *)methoda.name;
+        if ( !methoda.name )
+          sub_26BCC3C();
+        if ( !*((_DWORD *)methoda.name + 6) )
+          sub_26BCC48(v17);
+        v20 = *((unsigned __int8 *)methoda.name + 32);
+        if ( !TypeInfo::CP::CustomBitConverter->_1.cctor_finished_or_no_cctor )
+          sub_26BCB08(TypeInfo::CP::CustomBitConverter);
+        v21 = CP::CustomBitConverter::ToReverseInt32(name, 1, 0);
+        v22 = v21;
+        v23 = this->data;
+        v24 = methoda.klass;
+        if ( v20 > 3 )
+        {
+          switch ( v20 )
+          {
+            case 4:
+              UTF8 = System::Text::Encoding::get_UTF8(0);
+              if ( !UTF8 )
+                sub_26BCC3C();
+              v26 = (Byte__Array *)((__int64 (__fastcall *)(Encoding *, const char *, __int64, __int64, const MethodInfo *))UTF8->klass->vtable.GetString_1.methodPtr)(
+                                     UTF8,
+                                     methoda.name,
+                                     5,
+                                     v22,
+                                     UTF8->klass->vtable.GetString_1.method);
+              if ( !v23 )
+                sub_26BCC3C();
+              break;
+            case 5:
+              v32 = (Byte__Array *)methoda.name;
+              if ( !TypeInfo::CP::CustomBitConverter->_1.cctor_finished_or_no_cctor )
+                sub_26BCB08(TypeInfo::CP::CustomBitConverter);
+              methoda.token = CP::CustomBitConverter::ToReverseSingle(v32, 5, 0);
+              v26 = (Byte__Array *)sub_26BCB10(TypeInfo::System::Single, &methoda.token);
+              if ( !v23 )
+                sub_26BCC3C();
+              break;
+            case 6:
+              v29 = (Byte__Array *)methoda.name;
+              if ( !TypeInfo::CP::CustomBitConverter->_1.cctor_finished_or_no_cctor )
+                sub_26BCB08(TypeInfo::CP::CustomBitConverter);
+              LOBYTE(methoda.token) = CP::CustomBitConverter::ToBoolean(v29, 5, 0);
+              v26 = (Byte__Array *)sub_26BCB10(TypeInfo::System::Boolean, &methoda.token);
+              if ( !v23 )
+                sub_26BCC3C();
+              break;
+            default:
+              goto LABEL_57;
+          }
+        }
+        else
+        {
+          switch ( v20 )
+          {
+            case 1:
+              if ( !methoda.name )
+                sub_26BCC3C();
+              if ( *((_DWORD *)methoda.name + 6) <= 5u )
+                sub_26BCC48(v21);
+              LOBYTE(methoda.token) = *((_BYTE *)methoda.name + 37);
+              v26 = (Byte__Array *)sub_26BCB10(TypeInfo::System::Byte, &methoda.token);
+              if ( !v23 )
+                sub_26BCC3C();
+              break;
+            case 2:
+              v31 = (Byte__Array *)methoda.name;
+              if ( !TypeInfo::CP::CustomBitConverter->_1.cctor_finished_or_no_cctor )
+                sub_26BCB08(TypeInfo::CP::CustomBitConverter);
+              methoda.token = CP::CustomBitConverter::ToReverseInt32(v31, 5, 0);
+              v26 = (Byte__Array *)sub_26BCB10(TypeInfo::System::Int32, &methoda.token);
+              if ( !v23 )
+                sub_26BCC3C();
+              break;
+            case 3:
+              v25 = (Byte__Array *)methoda.name;
+              if ( !TypeInfo::CP::CustomBitConverter->_1.cctor_finished_or_no_cctor )
+                sub_26BCB08(TypeInfo::CP::CustomBitConverter);
+              *(_QWORD *)&methoda.token = CP::CustomBitConverter::ToReverseInt64(v25, 5, 0);
+              v26 = (Byte__Array *)sub_26BCB10(TypeInfo::System::Int64, &methoda.token);
+              if ( !v23 )
+                sub_26BCC3C();
+              break;
+            default:
+LABEL_57:
+              v26 = Diarkis::Lib::Packet::Slice((Byte__Array *)methoda.name, 5, v21, 0);
+              if ( !v23 )
+                sub_26BCC3C();
+              break;
+          }
+        }
+        ((void (__fastcall *)(Hashtable *, Il2CppClass *, Byte__Array *, const MethodInfo *))v23->klass->vtable.set_Item_1.methodPtr)(
+          v23,
+          v24,
+          v26,
+          v23->klass->vtable.set_Item_1.method);
+      }
+      else
+      {
+LABEL_39:
+        v27 = this->data;
+        if ( !v27 )
+          sub_26BCC3C();
+        if ( (((__int64 (__fastcall *)(Hashtable *, Il2CppClass *, const MethodInfo *))v27->klass->vtable.ContainsKey.methodPtr)(
+                v27,
+                methoda.klass,
+                v27->klass->vtable.ContainsKey.method)
+            & 1) != 0 )
+        {
+          v28 = this->data;
+          if ( !v28 )
+            sub_26BCC3C();
+          ((void (__fastcall *)(Hashtable *, Il2CppClass *, const MethodInfo *))v28->klass->vtable.Remove_1.methodPtr)(
+            v28,
+            methoda.klass,
+            v28->klass->vtable.Remove_1.method);
+        }
+      }
+    }
+  }
+  System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Dispose(
+    (Dictionary_2_TKey_TValue_KeyCollection_TKey_TValue_Enumerator_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)&methoda.return_type,
+    MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__KeyCollection_TKey_TValue_::Enumerator<int,System::Byte []>::Dispose);
+}
