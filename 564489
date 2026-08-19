@@ -1,0 +1,227 @@
+// Boolean SetupPlayerProperty(RoomSyncPlayer[], Boolean)
+// local variable allocation has failed, the output may be wrong!
+bool __fastcall CP::Realtime::Room::SetupPlayerProperty(
+        Room_1 *this,
+        RoomSyncPlayer__Array *roomSyncPlayers,
+        bool shouldUpdateIndex,
+        MethodInfo *method)
+{
+  __int64 v7; // x25
+  Dictionary_2_System_Int32_System_Byte_ **p_values; // x26
+  int32_t size; // w8
+  String *v10; // x24
+  int32_t v11; // w27
+  __int64 v12; // x21
+  Dictionary_2_System_Int32_System_Byte_ *v13; // x22
+  Player_1 *v14; // x0
+  Player_1 *v15; // x23
+  MethodInfo *v16; // x3
+  String *v17; // x24
+  int32_t v18; // w28
+  __int64 v19; // x22
+  Dictionary_2_System_Int32_System_Byte_ *v20; // x23
+  Player_1 *PushedPlayer; // x0
+  Player_1 *v22; // x21
+  MethodInfo *v23; // x3
+  Player_1 *v24; // x0
+  MethodInfo *v25; // x2
+  Dictionary_2_System_String_CP_Realtime_Player_ *players; // x0
+  Dictionary_2_TKey_TValue_ValueCollection_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *Values; // x0
+  bool v28; // w19
+  struct MethodInfo *v29; // x20
+  Il2CppClass *klass; // x0
+  __int64 v31; // x8
+  size_t v32; // x20
+  const void *v33; // x0
+  const Il2CppType **parameters; // x20
+  SyncProperty *v35; // x0
+  String *v36; // x20
+  struct MethodInfo *v37; // x21
+  const Il2CppRGCTXData *rgctx_data; // x8
+  __int64 rgctxDataDummy; // x0
+  __int64 v40; // x0
+  Object__Array *v41; // x21
+  MethodInfo methoda; // [xsp+8h] [xbp-88h] BYREF
+  DynamicPropertyPayload v44; // 0:x1.16
+  DynamicPropertyPayload v45; // 0:x1.16
+
+  if ( (byte_796EFAB & 1) == 0 )
+  {
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    sub_26BC96C();
+    byte_796EFAB = 1;
+  }
+  memset(&methoda.name, 0, 24);
+  if ( roomSyncPlayers && (int)roomSyncPlayers->max_length.value >= 1 )
+  {
+    v7 = 0;
+    p_values = &roomSyncPlayers->vector[0].playerProperty.values;
+    if ( shouldUpdateIndex )
+    {
+      while ( 1 )
+      {
+        v17 = (String *)*(p_values - 3);
+        v18 = *((_DWORD *)p_values - 4);
+        v19 = (__int64)*(p_values - 1);
+        v20 = *p_values;
+        PushedPlayer = CP::Realtime::Room::GetPushedPlayer(this, v17, (MethodInfo *)shouldUpdateIndex);
+        if ( !PushedPlayer )
+          break;
+        v22 = PushedPlayer;
+        if ( !System::String::op_Inequality(PushedPlayer->_UserId_k__BackingField, v17, 0) )
+        {
+          v22->_Index_k__BackingField = v18;
+          if ( v20 )
+          {
+            *(_QWORD *)&v45.isRSend = v19;
+            v45.values = v20;
+            CP::Realtime::Player::UnpackProperty(v22, v45, v23);
+          }
+        }
+        if ( v22->_Index_k__BackingField )
+        {
+          ++v7;
+          size = roomSyncPlayers->max_length.size;
+          p_values += 4;
+          if ( v7 >= size )
+            goto LABEL_19;
+        }
+        else
+        {
+          v22->_Index_k__BackingField = 9999999;
+          CP::Realtime::Room::RequestUserIndex(this, v22->_UserId_k__BackingField, (MethodInfo *)shouldUpdateIndex);
+          ++v7;
+          size = roomSyncPlayers->max_length.size;
+          p_values += 4;
+          if ( v7 >= size )
+            goto LABEL_19;
+        }
+      }
+LABEL_51:
+      sub_26BCC3C();
+    }
+    do
+    {
+      v10 = (String *)*(p_values - 3);
+      v11 = *((_DWORD *)p_values - 4);
+      v12 = (__int64)*(p_values - 1);
+      v13 = *p_values;
+      v14 = CP::Realtime::Room::GetPushedPlayer(this, v10, (MethodInfo *)shouldUpdateIndex);
+      if ( !v14 )
+        goto LABEL_51;
+      v15 = v14;
+      if ( !System::String::op_Inequality(v14->_UserId_k__BackingField, v10, 0) )
+      {
+        v15->_Index_k__BackingField = v11;
+        if ( v13 )
+        {
+          *(_QWORD *)&v44.isRSend = v12;
+          v44.values = v13;
+          CP::Realtime::Player::UnpackProperty(v15, v44, v16);
+        }
+      }
+      ++v7;
+      size = roomSyncPlayers->max_length.size;
+      p_values += 4;
+    }
+    while ( v7 < size );
+LABEL_19:
+    if ( size == 1 )
+    {
+      v24 = CP::Realtime::Room::GetPushedPlayer(
+              this,
+              roomSyncPlayers->vector[0].userId,
+              (MethodInfo *)shouldUpdateIndex);
+      if ( !roomSyncPlayers->max_length.size )
+        sub_26BCC48(v24);
+      CP::Realtime::Room::UpdateMasterClient(this, roomSyncPlayers->vector[0].userId, v25);
+    }
+  }
+  players = this->players;
+  if ( !players )
+    goto LABEL_51;
+  Values = System::Collections::Generic::Dictionary<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::get_Values(
+             (Dictionary_2_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)players,
+             MethodInfo::System::Collections::Generic::Dictionary<System::String,CP::Realtime::Player>::get_Values);
+  if ( !Values )
+    goto LABEL_51;
+  System::Collections::Generic::Dictionary_2_TKey_TValue_::ValueCollection<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::GetEnumerator(
+    Values,
+    &methoda);
+  *(_OWORD *)&methoda.name = *(_OWORD *)&methoda.methodPointer;
+  methoda.return_type = (const Il2CppType *)methoda.invoker_method;
+  methoda.methodPointer = 0;
+  methoda.virtualMethodPointer = (Il2CppMethodPointer)&methoda.name;
+  while ( 1 )
+  {
+    v28 = System::Collections::Generic::Dictionary_2_TKey_TValue__ValueCollection_TKey_TValue_::Enumerator<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::MoveNext(
+            (Dictionary_2_TKey_TValue_ValueCollection_TKey_TValue_Enumerator_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)&methoda.name,
+            MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__ValueCollection_TKey_TValue_::Enumerator<System::String,CP::Realtime::Player>::MoveNext);
+    if ( !v28 )
+      break;
+    v29 = MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__ValueCollection_TKey_TValue_::Enumerator<System::String,CP::Realtime::Player>::get_Current;
+    klass = MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__ValueCollection_TKey_TValue_::Enumerator<System::String,CP::Realtime::Player>::get_Current->klass;
+    if ( (*(_WORD *)((char *)klass + 309) & 1) != 0 )
+    {
+      v32 = *((unsigned int *)klass->rgctx_data[2].rgctxDataDummy + 63);
+    }
+    else
+    {
+      v31 = sub_26ED958(klass);
+      klass = v29->klass;
+      v32 = *(unsigned int *)(*(_QWORD *)(*(_QWORD *)(v31 + 192) + 16LL) + 252LL);
+      if ( (*(_WORD *)((char *)klass + 309) & 1) == 0 )
+        klass = (Il2CppClass *)sub_26ED958(klass);
+    }
+    v33 = (const void *)sub_26BC990(&methoda.name, *((_QWORD *)klass->rgctx_data[1].rgctxDataDummy + 16) + 96LL);
+    memcpy(&methoda.parameters, v33, v32);
+    parameters = methoda.parameters;
+    if ( !methoda.parameters )
+      sub_26BCC3C();
+    v35 = (SyncProperty *)*((_QWORD *)methoda.parameters + 2);
+    if ( !v35 )
+      sub_26BCC3C();
+    if ( CP::Realtime::SyncProperty::get_Count(v35, 0) <= 0 )
+    {
+      v36 = System::String::Concat((String *)"PlayerProperyが空のユーザを検知 ", (String *)parameters[4], 0);
+      v37 = MethodInfo::System::Array::Empty<System::Object>;
+      rgctx_data = MethodInfo::System::Array::Empty<System::Object>->rgctx_data;
+      if ( rgctx_data )
+      {
+        rgctxDataDummy = (__int64)rgctx_data[2].rgctxDataDummy;
+        if ( (*(_WORD *)(rgctxDataDummy + 309) & 1) != 0 )
+          goto LABEL_41;
+LABEL_40:
+        rgctxDataDummy = sub_26ED958(rgctxDataDummy);
+      }
+      else
+      {
+        sub_26ED9CC(MethodInfo::System::Array::Empty<System::Object>);
+        rgctxDataDummy = (__int64)v37->rgctx_data[2].rgctxDataDummy;
+        if ( (*(_WORD *)(rgctxDataDummy + 309) & 1) == 0 )
+          goto LABEL_40;
+      }
+LABEL_41:
+      if ( !*(_DWORD *)(rgctxDataDummy + 224) )
+        sub_26BCB08(rgctxDataDummy);
+      v40 = (__int64)v37->rgctx_data[2].rgctxDataDummy;
+      if ( (*(_WORD *)(v40 + 309) & 1) == 0 )
+        v40 = sub_26ED958(v40);
+      v41 = **(Object__Array ***)(v40 + 184);
+      if ( !TypeInfo::CP::LogUtility->_1.cctor_finished_or_no_cctor )
+        sub_26BCB08(TypeInfo::CP::LogUtility);
+      CP::LogUtility::LogError(v36, v41, 0);
+      break;
+    }
+  }
+  System::Collections::Generic::Dictionary_2_TKey_TValue__ValueCollection_TKey_TValue_::Enumerator<Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType,Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType>::Dispose(
+    (Dictionary_2_TKey_TValue_ValueCollection_TKey_TValue_Enumerator_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_Unity_IL2CPP_Metadata_Il2CppFullySharedGenericType_ *)&methoda.name,
+    MethodInfo::System::Collections::Generic::Dictionary_2_TKey_TValue__ValueCollection_TKey_TValue_::Enumerator<System::String,CP::Realtime::Player>::Dispose);
+  return !v28;
+}
